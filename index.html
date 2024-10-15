@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="profile">
+            <img src="images/Photo.jpg" alt="Photo d'identité de Vincent Tran" class="profile-pic">
+            <div class="profile-info">
+                <h1>Vincent TRAN</h1>
+                <h3>Data Scientist / Développeur web</h3>
+                <p>Passionné par l’Intelligence Artificielle et le développement Python, avec une solide expérience en programmation.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        <img src="images/phone_icon.jpg" alt="Icône téléphone" class="icon"> 
+                        <p> Téléphone:<a href=tel:+33767304398>07 67 30 43 98</a></p>
+                    </li>
+                    <li>
+                        <img src="images/email_icon.jpg" alt="Icône email" class="icon"> 
+                        <p>Email: <a href="mailto:vincenttran94@hotmail.fr" class="email">vincenttran94@hotmail.fr </a></p>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vincent-tran/" target="_blank" title="Mon LinkedIn">
+                            <img src="images/linkedin_icon.png" alt="Logo LinkedIn" class="icon">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Colonne gauche : Compétences et Formations -->
+        <aside class="sidebar">
+            <section id="skills">
+                <h2>Compétences</h2>
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li><b>Programmation :</b> Python, SQL, Go</li>
+                    <li><b>Développement Web :</b> (Flask, HTML/CSS, Javascript)</li>
+                    <li><b>Système d'exploitation :</b> Windows,Debian, Ubuntu</li>
+                    <li><b>Data Science:</b> Scikit-learn, Pandas,NLTK, SpaCy </li>
+                    <li><b>Bases de données :</b> PostgreSQL, NoSQL</li>
+                    <li><b>Gestion de projet :</b> Méthode Agile</li> 
+                </ul>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li><b>Rigoureux</b></li>
+                    <li><b>Travail d'équipe</b></li>
+                    <li><b>Résolution de problèmes</b></li>
+                    <li><b>Créatif</b></li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h3>Formations</h3>
+                <ul>
+                    <li><b>Octobre 2024 – Octobre 2025 :</b> <br> Diplôme Université Data Analystics <br> Université Paris 1 Panthéon-Sorbonne</li>
+                    <li><b>Novembre 2023 – Mars 2024 :</b>  Mastère 2 Data & IA <br>  HETIC</li>
+                    <li><b>Juin 2023 – Septembre 2023 :</b> Formation POEI Développeur Linux Bas Niveau <br>  DataScientest</li>
+                    <li><b>Février 2023 – Avril 2023 :</b> Développeur Python Web <br> M2I Formation</li>
+                    <li><b>Septembre 2021 - Juin 2022 :</b> Master 2 Ingénierie en Intelligence Artificielle <br> Université Paris 8 </li>
+                </ul>
+            </section>
+
+            <section id="hobbies">
+                <h3>Centres d'intérêts</h3>
+                <ul>
+                    <li><b>Escalade</b>  
+                    <li><b>Tennis de Table</b> 
+                    <li><b>Jeux Vidéo</b> 
+                    <li><b>Séries TV</b> 
+                </ul>
+            </section>
+
+        </aside>
+
+        <!-- Section Projets -->
+        <section id="projects">
+            <h2>Mes Projets sur Github</h2>
+
+            <!-- Projet 3 : Application Flask (Quiz) -->
+            <article class="project">
+                <div class="project-header">
+                    <img src="images/logo_preserve_ton_droit.jpeg" alt="Logo de l'Association Préserve Ton Droit" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> <!-- Logo de l'association -->
+                    <h3 style="display: inline;">Application web sur un quiz interactif pour l'Association Préserve Ton Droit</h3>
+                </div>
+                <div class="project-images">
+                    <img src="images/flask_quiz_project.png" alt="Capture d'écran de l'application quiz Flask 1">
+                    <img src="images/flask_quiz_project_2.png" alt="Capture d'écran de l'application quiz Flask 2">
+                </div>
+                <b>Création d'une application web de quiz pour une association, développée avec Flask. L'application permet aux utilisateurs de répondre à des quiz en ligne et de voir leurs scores en temps réel.</b>
+                <a href="https://github.com/vincent-tran-94/Quiz_PTD_application" target="_blank" title="Voir le projet sur GitHub">Voir le projet sur GitHub</a>
+            </article>
+
+            <!-- Projet 2 : Data Science (NLP) -->
+            <article class="project">
+                <div class="project-header">
+                    <img src="images/Logo_CY_Cergy_Paris_Universite.png" alt="Logo de l'Association Préserve Ton Droit" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
+                    <h3 style="display: inline;">Stage Data Scientist NLP au laboratoire de l'IDHN à Cergy Pontoise</h3>
+                </div>
+                <div class="project-images">
+                    <img src="images/nlp_project.png" alt="Projet NLP Image 1">
+                    <img src="images/nlp_project_2.png" alt="Projet NLP Image 2">
+                </div>
+                <b>Création d’un modèle de classification de texte (NLP) pour identifier des sujets dans le discours politique de chaque candidat à l’élection présidentielle 2022. </b> <br>
+                <a href="https://github.com/vincent-tran-94/Stage_Cergy" target="_blank" title="Voir le projet sur GitHub">Voir le projet sur GitHub</a>
+            </article>
+
+            <!-- Projet 1 : Raspberry Pi -->
+            <article class="project">
+                <div class="project-header">
+                    <img src="images/Datascientest_logo.png" alt="Logo de l'Association Préserve Ton Droit" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
+                    <h3 style="display: inline;">Projet fin de formation POEI Data Scientest - Raspberry Pi</h3>
+                </div>
+                <div class="project-images">
+                    <img src="images/raspberrypi_project.jpg" alt="Projet Raspberry Pi Image 1">
+                    <img src="images/raspberrypi_project_2.jpg" alt="Projet Raspberry Pi Image 2">
+                </div>
+                <b>Développement d'un système d'application dédié à la surveillance et à la gestion d'une carte Raspberry PI.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/Kernel_RPI" target="_blank" title="Voir le projet sur GitHub">Voir le projet sur GitHub</a>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

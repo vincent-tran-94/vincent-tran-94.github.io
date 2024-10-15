@@ -1,0 +1,210 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Texte par défaut noir */
+}
+
+/* En-tête */
+header {
+    background-color: #19468A; /* Bleu principal */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section profil dans l'en-tête */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #8F95D3;
+    color: white;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid white;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+/* Section contact dans l'en-tête */
+.contact-info {
+    margin-top: 10px; /* Espace entre le profil et les coordonnées */
+}
+
+.contact-info ul {
+    list-style-type: none; /* Pas de puces */
+    padding: 0; /* Pas de padding */
+    display: flex; /* Aligner horizontalement */
+    justify-content: center; /* Centre les éléments */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+}
+
+.contact-info li {
+    display: flex; /* Utilisation de flex pour aligner les éléments */
+    align-items: center; /* Alignement vertical */
+    margin: 5px 15px; /* Espace entre les lignes */
+}
+
+.contact-info .icon {
+    width: 20px; /* Largeur des icônes */
+    height: 20px; /* Hauteur des icônes */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+    fill: white; /* Icônes en blanc pour correspondre au thème */
+}
+
+/* Conteneur principal avec flexbox */
+.container {
+    display: flex;
+    justify-content: center; /* Centre les colonnes */
+    margin: 20px auto; /* Centre le conteneur */
+    max-width: 1200px; /* Largeur maximum du conteneur */
+    gap: 20px; /* Espace entre les colonnes */
+}
+
+/* Compétences */
+.skills {
+    flex: 1; /* Prend 1 part du flex */
+    min-width: 250px; /* Largeur minimum pour éviter trop d'étirement */
+}
+
+/* Projets */
+#projects {
+    flex: 2; /* Prend 2 parts du flex */
+    min-width: 500px; /* Largeur minimum pour éviter trop d'étirement */
+    text-align: center;
+}
+
+/* Styles pour les titres et paragraphes */
+h1, h2, h3, p {
+    margin: 0; /* Évite les marges excessives */
+    padding: 0;
+}
+
+/* Autres styles pour les projets */
+.project {
+    background: #fff; /* Fond blanc pour les projets */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Légère ombre */
+    padding: 15px; /* Espacement interne */
+    margin-bottom: 20px; /* Espacement entre les projets */
+}
+
+/* Liens */
+a {
+    color: white; /* Couleur de lien */
+    text-decoration: none; /* Pas de soulignement */
+    padding: 10px 15px; /* Espacement autour du lien */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Animation pour le survol */
+}
+
+
+/* Autres styles précédents */
+h1, h2, h3, p {
+    margin: 0; /* Évite les marges excessives */
+    padding: 0;
+}
+
+/* Conteneur principal avec deux colonnes */
+.main-container {
+    display: flex; /* Flexbox pour aligner la sidebar et les projets */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Colonne gauche : Sidebar */
+.sidebar {
+    flex: 1; /* Prend 1 part de l'espace disponible */
+    max-width: 300px; /* Largeur maximale pour la sidebar */
+    margin-right: 20px; /* Espace à droite entre la sidebar et les projets */
+}
+
+.sidebar h2, .sidebar h3 {
+    color: #19468A;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Projet */
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.project-images {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.project-images img {
+    width: 22%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #19468A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.project a:hover {
+    background-color: #800639; /* Fond sombre au survol */
+}
