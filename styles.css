@@ -1,15 +1,19 @@
 /* Style global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background:  linear-gradient(180deg,#283747,#475b70);
     margin: 0;
     padding: 0;
     color: #000; /* Texte par défaut noir */
 }
 
+
+
 /* En-tête */
 header {
-    background-color: #19468A; /* Bleu principal */
+    background: linear-gradient(180deg,#d9dbf0 ,#ffff);
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,8 +25,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #8F95D3;
-    color: white;
+    color: black;
 }
 
 .profile-pic {
@@ -86,6 +89,7 @@ header {
 .skills {
     flex: 1; /* Prend 1 part du flex */
     min-width: 250px; /* Largeur minimum pour éviter trop d'étirement */
+
 }
 
 /* Projets */
@@ -95,6 +99,7 @@ header {
     text-align: center;
 }
 
+
 /* Styles pour les titres et paragraphes */
 h1, h2, h3, p {
     margin: 0; /* Évite les marges excessives */
@@ -103,7 +108,7 @@ h1, h2, h3, p {
 
 /* Autres styles pour les projets */
 .project {
-    background: #fff; /* Fond blanc pour les projets */
+    background: linear-gradient(180deg,#d9dbf0 ,#ffff); /* Fond blanc pour les projets */
     border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Légère ombre */
     padding: 15px; /* Espacement interne */
@@ -139,10 +144,11 @@ h1, h2, h3, p {
     flex: 1; /* Prend 1 part de l'espace disponible */
     max-width: 300px; /* Largeur maximale pour la sidebar */
     margin-right: 20px; /* Espace à droite entre la sidebar et les projets */
+    color: white;
 }
 
 .sidebar h2, .sidebar h3 {
-    color: #19468A;
+    color: #4e8be6;
     margin-bottom: 10px;
 }
 
@@ -164,7 +170,7 @@ h2 {
 
 /* Projet */
 .project {
-    background-color: white;
+    background: linear-gradient(180deg,#d9dbf0 ,#ffff);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
@@ -198,15 +204,18 @@ h2 {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #19468A;
+    background: linear-gradient(45deg, #19468A, #800639);
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 
 .project a:hover {
     background-color: #800639; /* Fond sombre au survol */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
