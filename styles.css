@@ -218,6 +218,29 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Style pour le sélecteur de langue */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-selector select {
+    background-color: #4e8be6;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.language-selector select:hover {
+    background-color: #283747;
+}
+
+
+
 @media (max-width: 768px) {
     /* Ajustement du header */
     header {
@@ -304,3 +327,5 @@ h2 {
         font-size: 1rem;
     }
 }
+
+

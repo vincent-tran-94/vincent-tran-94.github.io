@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="language-switcher" style="position: absolute; top: 10px; right: 10px;">
+            <select id="language-select" onchange="changeLanguage()" style="padding: 5px; border-radius: 5px; border: 1px solid #000;">
+                <option value="index_en.html" selected>English</option>
+                <option value="index_fr.html" selected>Français</option>
+            </select>
+        </div>
+
+        <div class="profile">
+            <img src="images/Photo.jpg" alt="Photo d'identité de Vincent Tran" class="profile-pic">
+            <div class="profile-info">
+                <h1>Vincent TRAN</h1>
+                <h3>Scientifique des données / Développeur Web</h3>
+                <p>Passionné par l'intelligence artificielle et le développement en Python, avec une solide expérience en programmation.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        <img src="images/phone_icon.jpg" alt="Icône téléphone" class="icon">
+                        <p> Phone:<a href=tel:+33767304398 style="color: black">+33 7 67 30 43 98</a></p>
+                    </li>
+                    <li>
+                        <img src="images/email_icon.jpg" alt="Icône email" class="icon">
+                        <p>Email: <a href="mailto:" style="color: black" class="email">vincenttran94@hotmail.fr </a></p> 
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vincent-tran-94400/" style="color: black" target="_blank" title="Mon LinkedIn">
+                            <img src="images/linkedin_icon.png" alt="Logo LinkedIn" class="icon">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Colonne gauche: Compétences et Éducation -->
+        <aside class="sidebar">
+            <section id="skills">
+                <h2>Compétences</h2>
+                <h3>Compétences Techniques</h3>
+                <ul>
+                    <li><b>Programmation:</b> Python, SQL, Go, C</li>
+                    <li><b>Développement Web:</b> (Flask, HTML/CSS, Javascript)</li>
+                    <li><b>Systèmes d'exploitation:</b> Windows, Debian, Ubuntu</li>
+                    <li><b>Science des données:</b> Scikit-learn, Pandas, NLTK, SpaCy</li>
+                    <li><b>Bases de données:</b> PostgreSQL, NoSQL</li>
+                    <li><b>Gestion de projet:</b> Méthodologie Agile</li> 
+                </ul>
+                <h3>Compétences Comportementales</h3>
+                <ul>
+                    <li><b>Rigueur</b></li>
+                    <li><b>Travail en équipe</b></li>
+                    <li><b>Résolution de problèmes</b></li>
+                    <li><b>Créatif</b></li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h3>Formation</h3>
+                <ul>
+                    <li><b>Octobre 2024 – Octobre 2025 :</b> <br> Diplôme Universitaire en Data Analytics <br> Université Paris 1 Panthéon-Sorbonne</li>
+                    <li><b>Novembre 2023 – Mars 2024 :</b> Master 2 en Data & IA <br> HETIC</li>
+                    <li><b>Juin 2023 – Septembre 2023 :</b> POEI Développeur bas-niveau Linux <br> DataScientest</li>
+                    <li><b>Février 2023 – Avril 2023 :</b> Développeur Web Python <br> M2I Formation</li>
+                    <li><b>Septembre 2021 - Juin 2022 :</b> Master 2 en Ingénierie de l'Intelligence Artificielle <br> Université Paris 8</li>
+                </ul>
+            </section>
+
+            <section id="certifications">
+                <h3>Certifications</h3>
+                <ul>
+                    <li><b>Mars 2023 :</b> <br> TOSA Python – Score 823/1000 <br></li>
+                    <li><b>Janvier 2023 :</b> <br> Udemy – Spark et Python pour Big Data avec PySpark <br></li>
+                    <li><b>Novembre 2022 :</b> <br> Udemy – SQL pour la Data Science de A à Z <br></li>
+                </ul>
+            </section>
+
+            <section id="hobbies">
+                <h3>Loisirs</h3>
+                <ul>
+                    <li><b>Escalade</b></li>
+                    <li><b>Ping Pong</b></li>
+                    <li><b>Jeux Vidéo</b></li>
+                    <li><b>Séries TV</b></li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Section Projets -->
+        <section id="projects">
+            <h2 style='color: #4e8be6;'>Mes Meilleurs Projets sur Github</h2>
+
+            <!-- Projet 3 : Application Flask (Quiz) -->
+            <article class="project">
+                <div class="project-header">
+                    <img src="images/logo_preserve_ton_droit.jpeg" alt="Logo de l'association 'Préserve Ton Droit'" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> <!-- Logo de l'association -->
+                    <h3 style="display: inline;">Application Web Quiz Interactive pour l'association 'Préserve Ton Droit' | Novembre 2023 - Aujourd'hui </h3>
+                </div>
+                <div class="project-images">
+                    <img src="images/flask_quiz_project.png" alt="Capture d'écran de l'application Quiz Flask 1">
+                    <img src="images/flask_quiz_project_2.png" alt="Capture d'écran de l'application Quiz Flask 2">
+                </div>
+                <b>Application web de quiz pour une association, développée avec Flask. L'application permet aux utilisateurs de passer des quiz en ligne et de consulter leurs scores en temps réel.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/Quiz_PTD_application" target="_blank" title="Voir le projet sur GitHub">Voir le projet sur GitHub</a>
+            </article>
+
+            <!-- Projet 1 : Raspberry Pi -->
+            <article class="project">
+                <div class="project-header">
+                    <img src="images/Datascientest_logo.png" alt="Logo de DataScientest" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
+                    <h3 style="display: inline;">Projet Final pour la Formation POEI DataScientest - Raspberry Pi | Septembre 2023</h3>
+                </div>
+                <div class="project-images">
+                    <img src="images/raspberrypi_project.jpg" alt="Image du projet Raspberry Pi 1">
+                    <img src="images/raspberrypi_project_2.jpg" alt="Image du projet Raspberry Pi 2">
+                </div>
+                <b>Système d'application dédié à la surveillance et à la gestion d'une carte Raspberry Pi.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/Kernel_RPI" target="_blank" title="Voir le projet sur GitHub">Voir le projet sur GitHub</a>
+            </article>
+
+            <!-- Projet 2 : Data Science (NLP) -->
+            <article class="project">
+                <div class="project-header">
+                    <img src="images/Logo_CY_Cergy_Paris_Universite.png" alt="Logo de l'Université de Cergy" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
+                    <h3 style="display: inline;">Stage Data Scientist NLP au laboratoire IDHN, Cergy Pontoise | Février 2023</h3>
+                </div>
+                <div class="project-images">
+                    <img src="images/nlp_project.jpg" alt="Image du projet NLP 1">
+                    <img src="images/nlp_project_2.png" alt="Image du projet NLP 2">
+                </div>
+                <b>Projet de traitement automatique du langage naturel (NLP) pour l'analyse des opinions. Création d'un modèle de classification textuelle basé sur les sentiments.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/NLP_Sentiment_Analysis" target="_blank" title="Voir le projet sur GitHub">Voir le projet sur GitHub</a>
+            </article>
+        </section>
+    </main>
+    <script src="script.js" defer></script> <!-- Ajout du script JavaScript pour le changement de langue -->
+</body>
+</html>
