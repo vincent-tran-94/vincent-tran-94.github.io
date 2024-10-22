@@ -12,7 +12,7 @@ window.onload = function() {
     
     if (currentURL.includes('index_en.html')) {
         langSelect.value = 'index_en.html';  // Sélectionne English
-    } else if (currentURL.includes('index_fr.html')) {
-        langSelect.value = 'index_fr.html';  // Sélectionne Français
+    } else if (currentURL.includes('index.html')) {
+        langSelect.value = 'index.html';  // Sélectionne Français
     }
 };
