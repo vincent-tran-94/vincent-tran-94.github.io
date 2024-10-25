@@ -1,0 +1,441 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0f1821; /* Fond sombre profond */
+    color: #f5f5f5; /* Texte légèrement plus clair pour un meilleur contraste */
+    line-height: 1.6;
+}
+
+a {
+
+    text-decoration: none;
+    color: white; /* Accentuation du bleu pour les liens */
+}
+
+a:hover {
+    color: white; /* Lien bleu légèrement plus foncé au survol */
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between; /* Changez ceci si vous voulez d'autres éléments à gauche ou à droite */
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(180deg,#d9dbf0 ,#ffff);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid white;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 24px;
+    color: #0f1821; /* Couleur accentuée pour le logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: #00bfff; /* Bleu au survol des liens de navigation */
+}
+
+
+/* Section d'accueil (Hero) */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.hero-content h2 {
+    font-size: 16px;
+    color: var(--subtext-color);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    color: var(--accent-color);
+}
+
+.contact-info .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .icon:hover {
+    transform: scale(1.1); /* Effet de zoom sur hover */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacement entre les éléments de contact */
+}
+
+
+/* Projets */
+#projects {
+    flex: 2; /* Prend 2 parts du flex */
+    min-width: 500px; /* Largeur minimum pour éviter trop d'étirement */
+    text-align: center;
+}
+
+
+/* Styles pour les titres et paragraphes */
+h1, h2, h3, p {
+    margin: 0; /* Évite les marges excessives */
+    padding: 0;
+}
+
+
+/* Liens */
+a {
+    color: white; /* Couleur de lien */
+    text-decoration: none; /* Pas de soulignement */
+    padding: 10px 15px; /* Espacement autour du lien */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Animation pour le survol */
+}
+
+
+/* Autres styles précédents */
+h1, h2, h3, p {
+    margin: 0; /* Évite les marges excessives */
+    padding: 0;
+}
+
+/* Conteneur principal avec deux colonnes */
+.main-container {
+    display: flex; /* Flexbox pour aligner la sidebar et les projets */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Colonne gauche : Sidebar */
+.sidebar {
+    flex: 1; /* Prend 1 part de l'espace disponible */
+    max-width: 300px; /* Largeur maximale pour la sidebar */
+    margin-right: 20px; /* Espace à droite entre la sidebar et les projets */
+    color: white;
+}
+
+.sidebar h2, .sidebar h3 {
+    color: #4e8be6;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#about {
+    text-align: center;
+}
+
+/* Styles pour la section Resume */
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espace uniforme autour des cartes */
+    margin: 20px 0; /* Ajoute de l'espace en haut et en bas */
+}
+
+.resume-card {
+    background: linear-gradient(180deg,#80a6ed ,#ffff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    flex: 0 1 calc(20% - 30px); /* 3 cartes par ligne avec un espace */
+    min-width: 280px; /* Largeur minimale pour les petites cartes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
+    color: black;
+}
+
+.resume-card:hover {
+    transform: translateY(-5px); /* Élève légèrement la carte au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.resume-card h3 {
+    color: #333; /* Couleur de texte pour le titre */
+    margin-bottom: 15px; /* Espace sous le titre */
+}
+
+.resume-card ul {
+    list-style-type: none; /* Pas de puces pour les listes */
+    padding: 0; /* Pas de padding */
+}
+
+.resume-card li {
+    margin-bottom: 10px; /* Espace entre les éléments de la liste */
+    font-size: 1rem; /* Taille de texte */
+}
+
+/* Icônes */
+.resume-card i {
+    color: black; /* Couleur des icônes */
+    margin-right: 8px; /* Espace entre l'icône et le texte */
+}
+
+
+/* Conteneur principal des projets */
+#portfolio {
+    display: flex;               /* Utilise flexbox */
+    flex-wrap: wrap;            /* Permet aux éléments de se répartir sur plusieurs lignes */
+    justify-content: space-between; /* Espace entre les éléments */
+    margin: 20px;               /* Marges autour de la section */
+}
+
+/* Projet */
+.project {
+    background: linear-gradient(180deg,#80a6ed ,#ffff);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;               /* Réduit l'espacement entre les projets */
+    padding: 20px;
+    flex: 1 1 calc(15% - 10px); /* Chaque projet occupera 25% de la largeur moins les marges */
+    min-width: 250px;           /* Largeur minimale pour chaque projet */
+    box-sizing: border-box;     /* Inclut les paddings et les bordures dans la largeur */
+    color: black;
+}
+
+.project-images {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustements de la taille des images */
+.project-images img {
+    width: 100%;                /* S'assure que les images prennent toute la largeur de leur conteneur */
+    height: auto;               /* Conserve le ratio d'aspect */
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #19468A, #800639);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.project a:hover {
+    background-color: #800639; /* Fond sombre au survol */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le sélecteur de langue */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.language-selector select {
+    background-color: #4e8be6;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.language-selector select:hover {
+    background-color: #283747;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color:#0f1821; /* Couleur plus sombre pour le footer */
+    color: #bbb; /* Texte du footer plus clair */
+    font-size: 14px;
+}
+
+footer a {
+    color: #00bfff; /* Liens du footer en bleu vif */
+}
+
+footer a:hover {
+    color: #0080ff; /* Changement de teinte au survol */
+}
+
+
+/* Styles généraux pour les petits écrans */
+@media (max-width: 768px) {
+    /* Barre de navigation */
+    nav {
+        flex-direction: column; /* Change à une colonne pour le logo et les liens */
+        align-items: center; /* Centre les éléments */
+        padding: 1px; /* Réduit le padding */
+    }
+
+    .nav-links {
+        display: flex; /* Utilise Flexbox pour les liens */
+        justify-content: center; /* Centre les liens */
+        flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+        margin-top: 2px; /* Espace entre le logo et les liens */
+    }
+
+    .nav-links li {
+        margin: 0 3px; /* Espacement horizontal entre les liens */
+    }
+
+    .nav-links li a {
+        font-size: 16px; /* Ajuste la taille de police pour mobile */
+    }
+
+    /* Section d'accueil (Hero) */
+    .hero {
+        height: auto; /* Permet au contenu de s'adapter */
+        padding: 50px; /* Ajoute un peu de padding */
+        margin-top: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px; /* Réduit la taille du titre */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Réduit la taille du texte */
+    }
+
+
+
+    /* Conteneur principal avec deux colonnes */
+    .main-container {
+        flex-direction: column; /* Colonne unique sur mobile */
+        margin: 10px; /* Réduit les marges */
+    }
+
+    /* Colonne gauche : Sidebar */
+    .sidebar {
+        max-width: 100%; /* Prend toute la largeur disponible */
+        margin-right: 0; /* Supprime l'espacement à droite */
+        margin-bottom: 20px; /* Ajoute un espacement en bas */
+    }
+
+    /* Styles pour la section Resume */
+    .resume-container {
+        flex-direction: column; /* Colonne unique pour les cartes */
+        align-items: center; /* Centre les cartes */
+    }
+
+    .resume-card {
+        flex: 1 1 100%; /* Chaque carte prend 100% de la largeur */
+        margin: 10px 0; /* Espacement vertical entre les cartes */
+    }
+
+    /* Conteneur principal des projets */
+    #portfolio {
+        flex-direction: column; /* Colonne unique pour les projets */
+    }
+
+    .project {
+        flex: 1 1 100%; /* Chaque projet prend 100% de la largeur */
+        margin: 10px 0; /* Espacement vertical entre les projets */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px; /* Réduit le padding */
+        font-size: 12px; /* Réduit la taille du texte */
+    }
+
+    /* Sélecteur de langue */
+    .language-selector {
+        top: 10px; /* Ajuste la position */
+        right: 10px; /* Ajuste la position */
+    }
+
+    .language-selector select {
+        font-size: 0.9rem; /* Réduit la taille de la police */
+    }
+}

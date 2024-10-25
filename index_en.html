@@ -3,94 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Portfolio - Vincent TRAN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-
-        <div class="language-switcher" style="position: absolute; top: 10px; right: 10px;">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>Vincent TRAN</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <div class="language-switcher">
             <select id="language-select" onchange="changeLanguage()" style="padding: 5px; border-radius: 5px; border: 1px solid #000;">
-                <option value="index_en.html" selected>English</option>
+                <option value="index_en.html">English</option>
                 <option value="index.html" selected>Français</option>
             </select>
         </div>
+    </nav>
 
-        <div class="profile">
-            <img src="images/Photo.jpg" alt="Vincent Tran's ID Photo" class="profile-pic">
-            <div class="profile-info">
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <header>
+                <h2>PORTFOLIO</h2>
                 <h1>Vincent TRAN</h1>
-                <h3>Data Scientist / Web Developer</h3>
-                <p>Passionate about Artificial Intelligence and Python development, with a solid experience in programming.</p>
-            </div>
+                <h2>Data Scientist / Web Developer</h2>
+            </header>
+            <img src="images/Photo.jpg" alt="Profile picture of Vincent Tran" class="profile-pic">
+            <p>Passionate about artificial intelligence and development in Python, with solid programming experience.</p>
             <div class="contact-info">
                 <h3>Contact</h3>
-                <ul>
-                    <li>
-                        <img src="images/phone_icon.jpg" alt="Phone icon" class="icon"> 
-                        <p> Phone:<a href=tel:+33767304398 style="color: black">+33 7 67 30 43 98</a></p>
-                    </li>
-                    <li>
-                        <img src="images/email_icon.jpg" alt="Email icon" class="icon"> 
-                        <p>Email: <a href="mailto:vincenttran94@hotmail.fr" style="color: black" class="email">vincenttran94@hotmail.fr </a></p>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/vincent-tran-94400/" style="color: black" target="_blank" title="My LinkedIn">
-                            <img src="images/linkedin_icon.png" alt="LinkedIn logo" class="icon">
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul>
+                <img src="images/phone_icon.jpg" alt="Phone icon" class="icon" aria-label="Phone">
+                Phone:<a href="tel:+33767304398"> +33 7 67 30 43 98</a> <br>
+                <img src="images/email_icon.jpg" alt="Email icon" class="icon" aria-label="Email">
+                Email:<a href="mailto:vincenttran94@hotmail.fr" class="email"> vincenttran94@hotmail.fr </a> <br>
+                <img src="images/linkedin_icon.png" alt="LinkedIn logo" class="icon">
+                <a href="https://www.linkedin.com/in/vincent-tran-94400/" target="_blank" title="My LinkedIn" aria-label="Vincent Tran's LinkedIn profile"> LinkedIn</a>
+                <br>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="main-container">
-        <!-- Left Column: Skills and Education -->
-        <aside class="sidebar">
-            <section id="skills">
-                <h2>Skills</h2>
-                <h3>Hard Skills</h3>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>I am Vincent TRAN, passionate about artificial intelligence and development in Python. My background has allowed me to gain solid experience in programming and data analysis. I enjoy tackling technical challenges and working on innovative projects.</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Skills</h2>
+        
+        <div class="resume-container">
+            <div class="resume-card">
+                <h3>Technical Skills</h3>
                 <ul>
                     <li><b>Programming:</b> Python, SQL, Go, C</li>
-                    <li><b>Web Development:</b> (Flask, HTML/CSS, Javascript)</li>
+                    <li><b>Web Development:</b> Flask, HTML/CSS, JavaScript</li>
                     <li><b>Operating Systems:</b> Windows, Debian, Ubuntu</li>
                     <li><b>Data Science:</b> Scikit-learn, Pandas, NLTK, SpaCy, OpenCV</li>
                     <li><b>Databases:</b> PostgreSQL, NoSQL</li>
-                    <li><b>Project Management:</b> Agile Methodology</li> 
+                    <li><b>Project Management:</b> Agile Methodology</li>
                 </ul>
+            </div>
+        
+            <div class="resume-card">
                 <h3>Soft Skills</h3>
                 <ul>
-                    <li><b>Rigorous</b></li>
+                    <li><b>Attention to Detail</b></li>
                     <li><b>Teamwork</b></li>
-                    <li><b>Problem-solving</b></li>
-                    <li><b>Creative</b></li>
+                    <li><b>Problem Solving</b></li>
+                    <li><b>Creativity</b></li>
                 </ul>
-            </section>
-
-            <section id="education">
+            </div>
+        
+            <div class="resume-card">
                 <h3>Education</h3>
                 <ul>
-                    <li><b>October 2024 – October 2025:</b> <br> University Diploma in Data Analytics <br> University Paris 1 Panthéon-Sorbonne</li>
-                    <li><b>November 2023 – March 2024:</b> Master 2 in Data & AI <br> HETIC</li>
-                    <li><b>June 2023 – September 2023:</b> POEI Low-Level Linux Developer Training <br> DataScientest</li>
-                    <li><b>February 2023 – April 2023:</b> Python Web Developer <br> M2I Formation</li>
-                    <li><b>September 2021 - June 2022:</b> Master 2 in Artificial Intelligence Engineering <br> University Paris 8</li>
+                    <li><b>October 2024 – October 2025:</b> University Diploma in Data Analytics, University of Paris 1 Panthéon-Sorbonne</li>
+                    <li><b>November 2023 – March 2024:</b> Master's Degree in Data & AI, HETIC</li>
+                    <li><b>June 2023 – September 2023:</b> POEI Low-level Linux Developer, DataScientest</li>
+                    <li><b>February 2023 – April 2023:</b> Python Web Developer, M2I Training</li>
+                    <li><b>September 2021 - June 2022:</b> Master's Degree in Artificial Intelligence Engineering, University of Paris 8</li>
                 </ul>
-            </section>
-
-            <section id="certifications">
+            </div>
+        
+            <div class="resume-card">
                 <h3>Certifications</h3>
                 <ul>
-                    <li><b>Mars 2023 :</b> <br> TOSA Python – Score 823/1000 <br></li>
-                    <li><b>Janvier 2023</b> <br> Udemy – Spark and Python for Big Data with PySpark <br></li>
-                    <li><b>Novembre 2022</b> <br> Udemy - SQL pour la data science de A à Z<br></li>
+                    <li><b>March 2023:</b> TOSA Python – Score 823/1000</li>
+                    <li><b>January 2023:</b> Udemy – Spark and Python for Big Data with PySpark</li>
+                    <li><b>November 2022:</b> Udemy – SQL for Data Science from A to Z</li>
                 </ul>
-            </section>
-
-            <section id="hobbies">
+            </div>
+        
+            <div class="resume-card">
                 <h3>Hobbies</h3>
                 <ul>
                     <li><b>Climbing</b></li>
@@ -98,71 +111,66 @@
                     <li><b>Video Games</b></li>
                     <li><b>TV Series</b></li>
                 </ul>
-            </section>
-        </aside>
+            </div>
+        </div>
+    </section>
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h2 style='color: #4e8be6;'>My Best Projects on Github</h2>
-
+        <h2 style="text-align: center;">My Best Projects on GitHub</h2>       
+        <section id="portfolio">     
             <!-- Project 1: Flask Application (Quiz) -->
             <article class="project">
                 <div class="project-header">
-                    <img src="images/logo_preserve_ton_droit.jpeg" alt="Logo of the 'Préserve Ton Droit' Association" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> <!-- Association logo -->
-                    <h3 style="display: inline;">Interactive Quiz Web Application for 'Préserve Ton Droit' Association | November 2023 - Today </h3>
+                    <h3 style="display: inline;">Interactive Web Quiz Application for the 'Préserve Ton Droit' Association | November 2023 - Present </h3>
                 </div>
                 <div class="project-images">
-                    <img src="images/flask_quiz_project.png" alt="Screenshot of Flask quiz application 1">
-                    <img src="images/flask_quiz_project_2.png" alt="Screenshot of Flask quiz application 2">
+                    <img src="images/flask_quiz_project.png" alt="Screenshot of the Flask Quiz application 1">
                 </div>
-                <b>Quiz web application for an association, developed with Flask. The application allows users to take quizzes online and view their scores in real-time.</b> <br> 
-                <a href="https://github.com/vincent-tran-94/Quiz_PTD_application" target="_blank" title="See the project on GitHub">See the project on GitHub</a>
+                <b>Web application for quizzes developed with Flask. The application allows users to take quizzes online and check their scores in real-time.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/Quiz_PTD_application" target="_blank" title="View the project on GitHub">View the project on GitHub</a>
             </article>
 
-             <!-- Project 2: Raspberry Pi -->
-             <article class="project">
+            <!-- Project 2: Raspberry Pi -->
+            <article class="project">
                 <div class="project-header">
-                    <img src="images/Datascientest_logo.png" alt="Logo of the 'Préserve Ton Droit' Association" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
-                    <h3 style="display: inline;">Final Project for POEI DataScientest Training - Raspberry Pi | September 2023</h3>
+                    <h3 style="display: inline;">Final Project for the POEI DataScientest Training - Raspberry Pi | September 2023</h3>
                 </div>
                 <div class="project-images">
-                    <img src="images/raspberrypi_project_2.jpg" alt="Image du projet Raspberry Pi 2">
-                    <img src="images/raspberrypi_project.jpg" alt="Image du projet Raspberry Pi 1">
+                    <img src="images/raspberrypi_project_2.jpg" alt="Image of the Raspberry Pi project 2">
                 </div>
-                <b>Application system dedicated to monitoring and managing a Raspberry Pi board.</b> <br> 
-                <a href="https://github.com/vincent-tran-94/Kernel_RPI" target="_blank" title="See the project on GitHub">See the project on GitHub</a>
+                <b>Application system dedicated to the monitoring and management of a Raspberry Pi board.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/Kernel_RPI" target="_blank" title="View the project on GitHub">View the project on GitHub</a>
             </article>
 
             <!-- Project 3: Data Science (NLP) -->
             <article class="project">
                 <div class="project-header">
-                    <img src="images/Logo_CY_Cergy_Paris_Universite.png" alt="Logo of the 'Préserve Ton Droit' Association" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
-                    <h3 style="display: inline;">Data Scientist NLP Internship at IDHN Lab, Cergy Pontoise | February 2022 - July 2022  </h3>
+                    <h3 style="display: inline;">NLP Application | Data Science Course at the University of Cergy | January 2023</h3>
                 </div>
                 <div class="project-images">
-                    <img src="images/nlp_project.jpg" alt="NLP Project Image 1">
-                    <img src="images/nlp_project_2.png" alt="NLP Project Image 2">
+                    <img src="images/NLP_project_2.png" alt="Screenshot of the NLP project 2">
                 </div>
-                <b>Text classification model (NLP) was developed to identify the topics discussed in the political speeches of each candidate in the 2022 French presidential election</b> <br>
-                <a href="https://github.com/vincent-tran-94/Stage_Cergy" target="_blank" title="See the project on GitHub">See the project on GitHub</a>
+                <b>Development of a natural language processing (NLP) application for sentiment analysis on Twitter.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/NLP_projet" target="_blank" title="View the project on GitHub">View the project on GitHub</a>
             </article>
 
-            <!-- Project 4 : Robot Car -->
+            <!-- Project 4: Robot Car -->
             <article class="project">
                 <div class="project-header">
-                    <img src="images/logo_paris_8.png" alt="Logo of the University Paris 8" style="width: 10%; height: auto; margin-right: 10px; vertical-align: middle;"> 
                     <h3 style="display: inline;">M1/M2 Robot Car Project | October 2022 - November 2023</h3>
                 </div>
                 <div class="project-images">
                     <img src="images/robot_car.jpg" alt="Project image Robot Car">
-                    <img src="images/detection_object.jpg" alt="Project image detection_image">
                 </div>
-                <b>Control of a robot without human interaction using an ultrasonic sensor and a camera for object recognition</b> <br> 
-                <a href="https://github.com/vincent-tran-94/Electronic_Robot_Car_RPI" target="_blank" title="See the project on GitHub">See the project on GitHub</a>
+                <b>Controlling a robot without human interaction using an ultrasonic sensor and a camera for object recognition.</b> <br> 
+                <a href="https://github.com/vincent-tran-94/Electronic_Robot_Car_RPI" target="_blank" title="View the project on GitHub">View the project on GitHub</a>
             </article>
-
         </section>
-    </main>
-    <script src="script.js" defer></script> <!-- Ajout du script JavaScript pour le changement de langue -->
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vincent TRAN. All rights reserved.</p>
+    </footer>
+    <script src="new_script.js"></script>
 </body>
 </html>
