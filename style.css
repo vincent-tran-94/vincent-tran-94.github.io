@@ -91,6 +91,7 @@ nav {
     letter-spacing: 2px;
     margin-bottom: 10px;
     transition: color 0.3s ease;
+    padding: 40px;
 }
 
 .hero-content h1 {
@@ -196,8 +197,54 @@ h2 {
 }
 
 #about {
+    padding: 100px;
+    border-radius: 8px;
+    max-width: 1000px; /* Largeur maximale pour limiter la taille de la boîte */
+    margin: 0 auto; /* Centre horizontalement la boîte */
     text-align: center;
 }
+
+#about p {
+    margin-bottom: 25px; /* Ajustez la valeur selon vos besoins */
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre chaque section */
+    padding: 100px;
+}
+
+.resume-section {
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 1000px; /* Largeur maximale pour limiter la taille de la boîte */
+    margin: 0 auto; /* Centre horizontalement la boîte */
+    text-align: center;
+}
+
+.resume-section h3 {
+    color: #8dd3f1;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resume-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume-section li {
+    padding: 5px 0; /* Ajuste l'espacement autour de chaque élément de la liste */
+    margin: 0; /* Réduit les marges internes */
+    margin-bottom: 8px;
+    color: white;
+}
+
+.resume-section li b {
+    color: #8dd3f1; /* Couleur accentuée pour les dates */
+}
+
 
 /* Styles pour la section Resume */
 .resume-container {
@@ -208,12 +255,12 @@ h2 {
 }
 
 .resume-card {
-    background: linear-gradient(180deg,#80a6ed ,#ffff);
+    background: linear-gradient(180deg,#53ad6f ,#efeaea);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 15px;
-    flex: 0 1 calc(20% - 30px); /* 3 cartes par ligne avec un espace */
+    flex: 0 1 calc(20% - 50px); /* 3 cartes par ligne avec un espace */
     min-width: 280px; /* Largeur minimale pour les petites cartes */
     transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
     color: black;
@@ -225,7 +272,7 @@ h2 {
 }
 
 .resume-card h3 {
-    color: #333; /* Couleur de texte pour le titre */
+    color: black;
     margin-bottom: 15px; /* Espace sous le titre */
 }
 
@@ -248,6 +295,7 @@ h2 {
 
 /* Conteneur principal des projets */
 #portfolio {
+    text-align: center;
     display: flex;               /* Utilise flexbox */
     flex-wrap: wrap;            /* Permet aux éléments de se répartir sur plusieurs lignes */
     justify-content: space-between; /* Espace entre les éléments */
@@ -256,15 +304,22 @@ h2 {
 
 /* Projet */
 .project {
-    background: linear-gradient(180deg,#80a6ed ,#ffff);
+    background: linear-gradient(180deg, #80a6ed, #ffff);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;               /* Réduit l'espacement entre les projets */
+    margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(15% - 10px); /* Chaque projet occupera 25% de la largeur moins les marges */
-    min-width: 250px;           /* Largeur minimale pour chaque projet */
-    box-sizing: border-box;     /* Inclut les paddings et les bordures dans la largeur */
+    flex: 1 1 calc(15% - 10px);
+    min-width: 250px;
+    box-sizing: border-box;
     color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour les effets */
+}
+
+/* Effet de survol */
+.project:hover {
+    transform: translateY(-5px); /* Élève légèrement la carte au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
 }
 
 .project-images {
@@ -372,6 +427,29 @@ footer a:hover {
         font-size: 16px; /* Ajuste la taille de police pour mobile */
     }
 
+    #about {
+        padding: 0 10px; /* Ajoute un padding horizontal pour éviter le débordement */
+        max-width: 100%; /* Assure que le contenu ne déborde pas */
+        overflow: hidden; /* Cache tout débordement */
+        text-align: center; /* Centre le texte */
+    }
+
+    /* Ajustements de la taille de la police pour s'assurer que le texte s'adapte */
+    #about h2 {
+        font-size: 24px; /* Réduit la taille du titre */
+    }
+
+    #about p {
+        font-size: 14px; /* Réduit la taille du texte */
+        line-height: 1.4; /* Améliore la lisibilité */
+    }
+
+    /* Autres ajustements pour éviter le débordement */
+    .sidebar, .resume-container, #portfolio {
+        padding: 0 10px; /* Ajoute un padding horizontal pour éviter le débordement */
+    }
+
+
     /* Section d'accueil (Hero) */
     .hero {
         height: auto; /* Permet au contenu de s'adapter */
@@ -416,6 +494,7 @@ footer a:hover {
     /* Conteneur principal des projets */
     #portfolio {
         flex-direction: column; /* Colonne unique pour les projets */
+        margin: 0; /* Supprime la marge pour éviter le débordement */
     }
 
     .project {
