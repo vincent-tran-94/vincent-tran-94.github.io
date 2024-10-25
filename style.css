@@ -453,25 +453,22 @@ a:hover {
     }
 
     #about {
-        padding: 0 10px; /* Ajoute un padding horizontal pour éviter le débordement */
-        max-width: 100%; /* Assure que le contenu ne déborde pas */
-        overflow: hidden; /* Cache tout débordement */
-        text-align: center; /* Centre le texte */
+        padding: 20px; /* Ajuste le padding pour éviter le débordement */
+        max-width: 90%; /* Réduit la largeur maximale pour s'assurer qu'elle ne déborde pas */
     }
 
-    /* Ajustements de la taille de la police pour s'assurer que le texte s'adapte */
     #about h2 {
-        font-size: 24px; /* Réduit la taille du titre */
+        font-size: 22px; /* Ajuste la taille du titre pour les petits écrans */
     }
 
     #about p {
-        font-size: 14px; /* Réduit la taille du texte */
-        line-height: 1.4; /* Améliore la lisibilité */
+        font-size: 14px; /* Réduit encore la taille du texte si nécessaire */
+        margin: 0 5px; /* Réduit les marges pour éviter le débordement */
     }
 
     /* Autres ajustements pour éviter le débordement */
     .sidebar, .resume-container, #portfolio {
-        padding: 0 10px; /* Ajoute un padding horizontal pour éviter le débordement */
+        padding: 10px 10px; /* Ajoute un padding horizontal pour éviter le débordement */
     }
 
 
@@ -505,15 +502,16 @@ a:hover {
         margin-bottom: 20px; /* Ajoute un espacement en bas */
     }
 
-    /* Styles pour la section Resume */
     .resume-container {
         flex-direction: column; /* Colonne unique pour les cartes */
         align-items: center; /* Centre les cartes */
+        margin: 0 -50px; /* Centre horizontalement */
+        padding: 0; /* Supprime le padding pour éviter le débordement */
     }
 
-    .resume-card {
-        flex: 1 1 100%; /* Chaque carte prend 100% de la largeur */
-        margin: 10px 0; /* Espacement vertical entre les cartes */
+    .resume-section {
+        padding: 20px; /* Réduit le padding pour mobile */
+        margin: 0 -20px; /* Centre horizontalement */
     }
 
     /* Conteneur principal des projets */
@@ -547,7 +545,6 @@ a:hover {
 /* Styles pour l'orientation paysage */
 @media (orientation: landscape) and (max-width: 768px) {
     /* Ajustements spécifiques pour l'orientation paysage */
-
     .hero {
         padding: 30px; /* Réduit le padding */
     }
@@ -578,7 +575,7 @@ a:hover {
 /* Styles pour l'orientation portrait */
 @media (orientation: portrait) and (max-width: 768px) {
     /* Ajustements spécifiques pour l'orientation portrait */
-    
+
     .resume-card {
         flex: 1 1 100%; /* Chaque carte prend 100% de la largeur */
         margin: 10px 0; /* Espacement vertical entre les cartes */
