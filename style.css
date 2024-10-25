@@ -363,26 +363,37 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pour le sélecteur de langue */
-.language-selector {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+
+.language-switcher {
+    background-color: #19468A; /* Fond sombre */
+    padding: 6px 10px;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    position: relative; /* Position pour aligner la flèche */
+    display: inline-block;
+    appearance: none; /* Supprime le style par défaut */
+    outline: none; /* Supprime le contour au focus */
+    box-shadow: none; /* Supprime le contour noir */
 }
 
-
-.language-selector select {
-    background-color: #4e8be6;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
+/* Style du sélecteur de langue */
+.language-switcher select {
+    background-color: #19468A;
+    color: #f5f5f5; /* Texte clair */
     border: none;
     font-size: 1rem;
+    padding-right: 20px; /* Espace pour la flèche */
     cursor: pointer;
 }
 
-.language-selector select:hover {
-    background-color: #283747;
+/* Flèche pour la liste déroulante */
+.language-switcher::after {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f5f5f5;
+    pointer-events: none;
+    box-shadow: none; /* Supprime le contour noir */
 }
 
 /* Footer */
