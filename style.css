@@ -454,7 +454,7 @@ a:hover {
 
     #about {
         padding: 20px; /* Ajuste le padding pour éviter le débordement */
-        max-width: 90%; /* Réduit la largeur maximale pour s'assurer qu'elle ne déborde pas */
+        max-width: 100%; /* Réduit la largeur maximale pour s'assurer qu'elle ne déborde pas */
     }
 
     #about h2 {
@@ -542,48 +542,55 @@ a:hover {
     }
 }
 
-/* Styles pour l'orientation paysage */
-@media (orientation: landscape) and (max-width: 768px) {
-    /* Ajustements spécifiques pour l'orientation paysage */
+@media (orientation: landscape) {
+    #about {
+        margin-top: 80px; /* Ajustement pour compenser la barre de navigation */
+        padding-top: 100px; /* Ajuste le padding pour l'espacement */
+    }
+
     .hero {
-        padding: 30px; /* Réduit le padding */
+        padding: 50px; /* Ajuste le padding pour le contenu */
     }
 
     .hero-content h1 {
-        font-size: 28px; /* Réduit encore la taille du titre */
+        font-size: 28px; /* Taille réduite du titre pour le paysage */
     }
 
     .hero-content p {
-        font-size: 14px; /* Réduit la taille du texte */
+        font-size: 14px; /* Taille réduite du texte pour le paysage */
     }
 
     .nav-links li {
-        margin: 0 5px; /* Augmente l'espacement horizontal entre les liens */
+        margin: 0 5px; /* Espace horizontal entre les liens */
     }
 
     .resume-card {
         flex: 0 1 calc(45% - 20px); /* 2 cartes par ligne en paysage */
-        margin: 10px; /* Ajuste les marges */
+        margin: 10px;
     }
 
     .project {
         flex: 0 1 calc(45% - 20px); /* 2 projets par ligne en paysage */
-        margin: 10px; /* Ajuste les marges */
+        margin: 10px;
     }
 }
 
 /* Styles pour l'orientation portrait */
-@media (orientation: portrait) and (max-width: 768px) {
-    /* Ajustements spécifiques pour l'orientation portrait */
-
+@media (orientation: portrait) {
     .resume-card {
         flex: 1 1 100%; /* Chaque carte prend 100% de la largeur */
-        margin: 10px 0; /* Espacement vertical entre les cartes */
+        margin: 10px 0;
     }
 
     .project {
         flex: 1 1 100%; /* Chaque projet prend 100% de la largeur */
-        margin: 10px 0; /* Espacement vertical entre les projets */
+        margin: 10px 0;
+    }
+
+    /* Ajustement pour la section #about en portrait */
+    #about {
+        padding-top: 20px;
+        margin-top: 80px;
     }
 }
 
