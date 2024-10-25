@@ -208,13 +208,16 @@ h2 {
     margin-bottom: 25px; /* Ajustez la valeur selon vos besoins */
 }
 
+#about p {
+    margin-bottom: 25px; /* Ajustez la valeur selon vos besoins */
+}
+
 #resume {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Espacement entre chaque section */
     padding: 100px;
 }
-
 .resume-section {
     padding: 50px;
     border-radius: 8px;
@@ -222,25 +225,21 @@ h2 {
     margin: 0 auto; /* Centre horizontalement la boîte */
     text-align: center;
 }
-
 .resume-section h3 {
     color: #8dd3f1;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-
 .resume-section ul {
     list-style-type: none;
     padding: 0;
 }
-
 .resume-section li {
     padding: 5px 0; /* Ajuste l'espacement autour de chaque élément de la liste */
     margin: 0; /* Réduit les marges internes */
     margin-bottom: 8px;
     color: white;
 }
-
 .resume-section li b {
     color: #8dd3f1; /* Couleur accentuée pour les dates */
 }
@@ -248,20 +247,21 @@ h2 {
 
 /* Styles pour la section Resume */
 .resume-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Espace uniforme autour des cartes */
-    margin: 20px 0; /* Ajoute de l'espace en haut et en bas */
+    display: flex;         /* Utilise Flexbox pour la disposition */
+    flex-wrap: nowrap;    /* Permet aux cartes de rester sur une seule ligne */
+    justify-content: space-between; /* Espace entre les cartes */
+    gap: 15px;            /* Espacement entre les cartes */
+    overflow-x: auto;     /* Permet le défilement horizontal si nécessaire */
 }
 
+/* Modifiez les cartes de résumé pour qu'elles prennent moins d'espace */
 .resume-card {
-    background: linear-gradient(180deg,#53ad6f ,#efeaea);
+    background: linear-gradient(180deg, #53ad6f, #efeaea);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 15px;
-    flex: 0 1 calc(20% - 50px); /* 3 cartes par ligne avec un espace */
-    min-width: 280px; /* Largeur minimale pour les petites cartes */
+    flex: 0 0 calc(20% - 10px); /* Chaque carte prend environ 20% de la largeur du conteneur */
+    min-width: 250px;    /* Largeur minimale pour les petites cartes */
     transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
     color: black;
 }
@@ -297,10 +297,12 @@ h2 {
 #portfolio {
     text-align: center;
     display: flex;               /* Utilise flexbox */
-    flex-wrap: wrap;            /* Permet aux éléments de se répartir sur plusieurs lignes */
-    justify-content: space-between; /* Espace entre les éléments */
+    flex-wrap: nowrap;          /* Permet aux projets de rester sur une seule ligne */
+    justify-content: space-between; /* Espace entre les projets */
     margin: 20px;               /* Marges autour de la section */
+    overflow-x: auto;           /* Permet le défilement horizontal si nécessaire */
 }
+
 
 /* Projet */
 .project {
@@ -309,8 +311,8 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(15% - 10px);
-    min-width: 250px;
+    flex: 0 0 calc(20% - 10px); /* Chaque projet prend environ 20% de la largeur du conteneur */
+    min-width: 250px;           /* Largeur minimale pour les petits projets */
     box-sizing: border-box;
     color: black;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour les effets */
