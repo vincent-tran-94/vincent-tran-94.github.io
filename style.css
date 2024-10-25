@@ -403,6 +403,31 @@ footer a:hover {
 }
 
 
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0f1821; /* Fond sombre profond */
+    color: #f5f5f5; /* Texte légèrement plus clair pour un meilleur contraste */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Accentuation du bleu pour les liens */
+}
+
+a:hover {
+    color: white; /* Lien bleu légèrement plus foncé au survol */
+}
+
+/* ... votre code CSS existant ... */
+
 /* Styles généraux pour les petits écrans */
 @media (max-width: 768px) {
     /* Barre de navigation */
@@ -518,3 +543,50 @@ footer a:hover {
         font-size: 0.9rem; /* Réduit la taille de la police */
     }
 }
+
+/* Styles pour l'orientation paysage */
+@media (orientation: landscape) and (max-width: 768px) {
+    /* Ajustements spécifiques pour l'orientation paysage */
+
+    .hero {
+        padding: 30px; /* Réduit le padding */
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Réduit encore la taille du titre */
+    }
+
+    .hero-content p {
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+
+    .nav-links li {
+        margin: 0 5px; /* Augmente l'espacement horizontal entre les liens */
+    }
+
+    .resume-card {
+        flex: 0 1 calc(45% - 20px); /* 2 cartes par ligne en paysage */
+        margin: 10px; /* Ajuste les marges */
+    }
+
+    .project {
+        flex: 0 1 calc(45% - 20px); /* 2 projets par ligne en paysage */
+        margin: 10px; /* Ajuste les marges */
+    }
+}
+
+/* Styles pour l'orientation portrait */
+@media (orientation: portrait) and (max-width: 768px) {
+    /* Ajustements spécifiques pour l'orientation portrait */
+    
+    .resume-card {
+        flex: 1 1 100%; /* Chaque carte prend 100% de la largeur */
+        margin: 10px 0; /* Espacement vertical entre les cartes */
+    }
+
+    .project {
+        flex: 1 1 100%; /* Chaque projet prend 100% de la largeur */
+        margin: 10px 0; /* Espacement vertical entre les projets */
+    }
+}
+
