@@ -42,8 +42,8 @@ nav {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-right: 20px;
     border: 4px solid white;
@@ -83,6 +83,7 @@ nav {
     justify-content: center;
     text-align: center;
     background-color: var(--bg-color);
+    padding-bottom: 600px;
 }
 
 .hero-content h2 {
@@ -424,22 +425,7 @@ footer a:hover {
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    background-color: #0f1821; /* Fond sombre profond */
-    color: #f5f5f5; /* Texte légèrement plus clair pour un meilleur contraste */
-    line-height: 1.6;
-}
 
-a {
-    text-decoration: none;
-    color: white; /* Accentuation du bleu pour les liens */
-}
-
-a:hover {
-    color: white; /* Lien bleu légèrement plus foncé au survol */
-}
-
-/* ... votre code CSS existant ... */
 
 /* Styles généraux pour les petits écrans */
 @media (max-width: 768px) {
@@ -558,11 +544,11 @@ a:hover {
 @media (orientation: landscape) {
     #about {
         margin-top: 80px; /* Ajustement pour compenser la barre de navigation */
-        padding-top: 100px; /* Ajuste le padding pour l'espacement */
+        padding-top: 450px; /* Ajuste le padding pour l'espacement */
     }
 
     .hero {
-        padding: 50px; /* Ajuste le padding pour le contenu */
+        padding-top: 550px; /* Ajuste le padding pour le contenu */
     }
 
     .hero-content h1 {
@@ -603,7 +589,6 @@ a:hover {
     /* Ajustement pour la section #about en portrait */
     #about {
         padding-top: 20px;
-        margin-top: 80px;
+        margin-bottom: 80px;
     }
 }
-
