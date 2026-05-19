@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Portfolio - Vincent TRAN",
-  description: "Portfolio de Vincent TRAN - Scientifique des données / Développeur Web",
+  description: "Portfolio de Vincent TRAN - Développeur Full Stack / Ingénieur IA",
 };
 
 export default function RootLayout({
