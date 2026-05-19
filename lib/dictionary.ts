@@ -78,7 +78,7 @@ const fr: Dictionary = {
   about: {
     title: "À Propos",
     paragraph1: "Je suis Vincent TRAN, passionné par l'intelligence artificielle, le développement web, et la data science. Fort d'au moins trois ans d'expérience professionnelle, j'ai acquis des compétences solides en programmation, analyse de données et systèmes embarqués. J'aime relever des défis et travailler sur des projets concrets qui ont un impact positif.",
-    paragraph2: "J'ai notamment contribué au développement d'une application web pour l'association Préserve ton droit, où j'ai créé des parcours d'apprentissage interactifs pour les utilisateurs. Ce projet a également permis de collecter des données utiles pour accroître la visibilité de l'association. En parallèle, je suis capable de rédiger des documents techniques et fonctionnelspour fournir des informations et des conseils pratiques.",
+    paragraph2: "J'ai notamment contribué au développement d'une application web pour l'association Préserve ton droit, où j'ai créé des parcours d'apprentissage interactifs pour les utilisateurs. Ce projet a également permis de collecter des données utiles pour accroître la visibilité de l'association. En parallèle, je suis capable de rédiger des documents techniques et fonctionnels pour fournir des informations et des conseils pratiques.",
     paragraph3: "En plus de mon expérience dans le développement web, j'ai des connaissances en data science et en systèmes embarqués, ce qui me permet d'approcher des projets sous différents angles. Aujourd'hui, je suis motivé à rejoindre une entreprise dynamique et innovante, où je pourrai mettre à profit mes compétences pour contribuer efficacement à des projets significatifs.",
   },
   resume: {
