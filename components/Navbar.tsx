@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Dictionary } from "@/lib/dictionary";
@@ -109,24 +110,62 @@ export default function Navbar({ dict, locale }: NavbarProps) {
           </li>
         ))}
         <li style={{ marginLeft: "8px" }}>
-          <select
-            value={locale}
-            onChange={(e) => { window.location.href = `/${e.target.value}`; }}
-            style={{
-              background: "rgba(255, 255, 255, 0.06)",
-              color: "#f0f4ff",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
-              fontSize: "0.85rem",
-              padding: "6px 12px",
-              borderRadius: "8px",
-              cursor: "pointer",
-              outline: "none",
-              fontWeight: 500,
-            }}
-          >
-            <option value="fr">FR</option>
-            <option value="en">EN</option>
-          </select>
+          <div style={{ position: "relative" }}>
+            <select
+              value={locale}
+              onChange={(e) => { window.location.href = `/${e.target.value}`; }}
+              style={{
+                background: "linear-gradient(135deg, rgba(74, 124, 247, 0.15), rgba(108, 99, 255, 0.12))",
+                color: "#e8edff",
+                border: "1px solid rgba(74, 124, 247, 0.3)",
+                fontSize: "0.85rem",
+                padding: "7px 32px 7px 14px",
+                borderRadius: "8px",
+                cursor: "pointer",
+                outline: "none",
+                fontWeight: 600,
+                letterSpacing: "0.5px",
+                fontFamily: "inherit",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                appearance: "none",
+                WebkitAppearance: "none",
+                MozAppearance: "none",
+                transition: "all 0.3s ease",
+                minWidth: "72px",
+                textAlign: "center" as const,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "rgba(74, 124, 247, 0.6)";
+                e.currentTarget.style.background = "linear-gradient(135deg, rgba(74, 124, 247, 0.25), rgba(108, 99, 255, 0.2))";
+                e.currentTarget.style.boxShadow = "0 0 20px rgba(74, 124, 247, 0.15)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "rgba(74, 124, 247, 0.3)";
+                e.currentTarget.style.background = "linear-gradient(135deg, rgba(74, 124, 247, 0.15), rgba(108, 99, 255, 0.12))";
+                e.currentTarget.style.boxShadow = "none";
+              }}
+            >
+              <option value="fr" style={{ background: "#0e1428", color: "#e8edff", padding: "8px" }}>FR</option>
+              <option value="en" style={{ background: "#0e1428", color: "#e8edff", padding: "8px" }}>EN</option>
+            </select>
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              style={{
+                position: "absolute",
+                right: "12px",
+                top: "50%",
+                transform: "translateY(-50%)",
+                pointerEvents: "none",
+                opacity: 0.7,
+              }}
+            >
+              <path d="M1 1L5 5L9 1" stroke="#8a9bff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </li>
       </ul>
     </motion.nav>
