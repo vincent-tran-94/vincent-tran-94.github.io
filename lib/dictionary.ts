@@ -157,6 +157,12 @@ const fr: Dictionary = {
         image: "/images/Interface_part_1_Streamlit.png",
       },
       {
+        title: "Recherche d'informations de Quiz avec l'architecture RAG ( Retrieval Augmented Generation )",
+        description: "L'objectif est de permettre à l'utilisateur de spécifier des informations précises pour générer un contexte de quiz adapté.",
+        link: "https://github.com/vincent-tran-94/LLM-Quiz-Contextual-RAG",
+        image: "/images/interface_quiz.png",
+      },
+      {
         title: "Analyse sentimentale des tweets sur les jeux vidéos",
         description: "L'objectif principal de ce projet est de déterminer si un type de jeu est perçu comme bon, mauvais ou neutre à partir d'un ensemble de tweets, en utilisant des modèles de Machine Learning",
         link: "https://github.com/vincent-tran-94/Sentiment_Analytics_Video_Games",
@@ -285,16 +291,22 @@ const en: Dictionary = {
         image: "/images/Interface_part_1_Streamlit.png",
       },
       {
-        title: "Multi-class classification of tweets from candidates in the 2022 presidential election",
-        description: "Development and evaluation of supervised text classification models to identify political themes in the speeches of candidates for the 2022 presidential election. Integration of the results into an interactive web application",
-        link: "https://github.com/vincent-tran-94/Stage_Cergy",
-        image: "/images/nlp_project_2.png",
+        title: "Searching for quiz information using RAG (Retrieval Augmented Generation) architecture",
+        description: "The objective is to allow users to specify precise information to generate an appropriate quiz context.",
+        link: "https://github.com/vincent-tran-94/LLM-Quiz-Contextual-RAG",
+        image: "/images/interface_quiz.png",
       },
       {
         title: "Sentimental analysis of tweets about video games",
         description: "The main objective of this project is to determine whether a type of game is perceived as good, bad or neutral based on a set of tweets, using Machine Learning models",
         link: "https://github.com/vincent-tran-94/Sentiment_Analytics_Video_Games",
         image: "/images/Vocabulary_sentimental_by_game.png",
+      },
+      {
+        title: "Multi-class classification of tweets from candidates in the 2022 presidential election",
+        description: "Development and evaluation of supervised text classification models to identify political themes in the speeches of candidates for the 2022 presidential election. Integration of the results into an interactive web application",
+        link: "https://github.com/vincent-tran-94/Stage_Cergy",
+        image: "/images/nlp_project_2.png",
       },
       {
         title: "Raspberry Pi Final Project - DataScientest",
