@@ -157,8 +157,14 @@ const fr: Dictionary = {
         image: "/images/Interface_part_1_Streamlit.png",
       },
       {
-        title: "Application NLP - Analyse de sentiments",
-        description: "Développement d'une application de traitement de langage naturel pour l'analyse de sentiment sur les réseaux sociaux.",
+        title: "Analyse sentimentale des tweets sur les jeux vidéos",
+        description: "L'objectif principal de ce projet est de déterminer si un type de jeu est perçu comme bon, mauvais ou neutre à partir d'un ensemble de tweets, en utilisant des modèles de Machine Learning",
+        link: "https://github.com/vincent-tran-94/Sentiment_Analytics_Video_Games",
+        image: "/images/Vocabulary_sentimental_by_game.png",
+      },
+      {
+        title: "Classification multi-classes des tweets des candidats à l'élection présidentielle de 2022",
+        description: "Développement et évaluation des modèles de classification de texte supervisée pour identifier des sujets politiques dans les discours des candidats à l'élection présidentielle de 2022. Intégration des résultats dans une application web interactive",
         link: "https://github.com/vincent-tran-94/Stage_Cergy",
         image: "/images/nlp_project_2.png",
       },
@@ -279,10 +285,16 @@ const en: Dictionary = {
         image: "/images/Interface_part_1_Streamlit.png",
       },
       {
-        title: "NLP Application - Sentiment Analysis",
-        description: "Development of a natural language processing application for sentiment analysis on social networks.",
+        title: "Multi-class classification of tweets from candidates in the 2022 presidential election",
+        description: "Development and evaluation of supervised text classification models to identify political themes in the speeches of candidates for the 2022 presidential election. Integration of the results into an interactive web application",
         link: "https://github.com/vincent-tran-94/Stage_Cergy",
         image: "/images/nlp_project_2.png",
+      },
+      {
+        title: "Sentimental analysis of tweets about video games",
+        description: "The main objective of this project is to determine whether a type of game is perceived as good, bad or neutral based on a set of tweets, using Machine Learning models",
+        link: "https://github.com/vincent-tran-94/Sentiment_Analytics_Video_Games",
+        image: "/images/Vocabulary_sentimental_by_game.png",
       },
       {
         title: "Raspberry Pi Final Project - DataScientest",
