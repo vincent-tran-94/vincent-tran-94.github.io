@@ -1,0 +1,96 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12"/>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)" rx="12"/>
+  <text x="400" y="32" text-anchor="middle" fill="#f97316" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif">Architecture IA — PréserveTonDroit</text>
+  <rect x="20" y="370" width="760" height="65" rx="8" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="35" y="388" fill="#818cf8" font-size="8" font-weight="700" font-family="Segoe UI, sans-serif" letter-spacing="1">COUCHE DONNÉES</text>
+  <rect x="100" y="395" width="160" height="28" rx="6" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="180" y="413" text-anchor="middle" fill="#a5b4fc" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">pgvector</text>
+  <rect x="320" y="395" width="160" height="28" rx="6" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="400" y="413" text-anchor="middle" fill="#a5b4fc" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">PostgreSQL 16</text>
+  <rect x="540" y="395" width="160" height="28" rx="6" fill="#1c1c1c" stroke="#991b1b" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+  <text x="620" y="413" text-anchor="middle" fill="#6b6b6b" font-size="10" font-weight="700" text-decoration="line-through" font-family="Segoe UI, sans-serif">Redis (retiré)</text>
+  <text x="700" y="408" fill="#ef4444" font-size="14" font-weight="900">✗</text>
+  <rect x="30" y="55" width="170" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="115" y="82" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">RAG Documents</text>
+  <text x="115" y="98" text-anchor="middle" fill="#93c5fd" font-size="8" opacity="0.8" font-family="Segoe UI, sans-serif">Droit interne</text>
+  <rect x="50" y="106" width="130" height="16" rx="6" fill="rgba(59,130,246,0.2)"/>
+  <text x="115" y="117" text-anchor="middle" fill="#60a5fa" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Recherche vectorielle</text>
+  <rect x="30" y="150" width="170" height="75" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+  <text x="115" y="177" text-anchor="middle" fill="#fdba74" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">Générateur Questions</text>
+  <text x="115" y="193" text-anchor="middle" fill="#fdba74" font-size="8" opacity="0.8" font-family="Segoe UI, sans-serif">Création via LLM</text>
+  <rect x="50" y="201" width="130" height="16" rx="6" fill="rgba(249,115,22,0.2)"/>
+  <text x="115" y="212" text-anchor="middle" fill="#fb923c" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">QCM dynamiques</text>
+  <rect x="30" y="245" width="170" height="50" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="115" y="268" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">Domaines Juridiques</text>
+  <rect x="50" y="278" width="130" height="14" rx="6" fill="rgba(59,130,246,0.2)"/>
+  <text x="115" y="288" text-anchor="middle" fill="#60a5fa" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Classification</text>
+  <rect x="30" y="310" width="170" height="50" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+  <text x="115" y="333" text-anchor="middle" fill="#fdba74" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">Validateur Juridique</text>
+  <rect x="50" y="343" width="130" height="14" rx="6" fill="rgba(249,115,22,0.2)"/>
+  <text x="115" y="353" text-anchor="middle" fill="#fb923c" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Validation</text>
+  <rect x="600" y="55" width="170" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="685" y="82" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">Scoring Pédagogique</text>
+  <text x="685" y="98" text-anchor="middle" fill="#93c5fd" font-size="8" opacity="0.8" font-family="Segoe UI, sans-serif">Niveau adaptatif</text>
+  <rect x="620" y="106" width="130" height="16" rx="6" fill="rgba(59,130,246,0.2)"/>
+  <text x="685" y="117" text-anchor="middle" fill="#60a5fa" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Évaluation</text>
+  <rect x="600" y="150" width="170" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="685" y="177" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">Next.js API</text>
+  <text x="685" y="193" text-anchor="middle" fill="#93c5fd" font-size="8" opacity="0.8" font-family="Segoe UI, sans-serif">REST Endpoints</text>
+  <rect x="620" y="201" width="130" height="16" rx="6" fill="rgba(59,130,246,0.2)"/>
+  <text x="685" y="212" text-anchor="middle" fill="#60a5fa" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Interface REST</text>
+  <rect x="600" y="245" width="170" height="50" rx="8" fill="#065f46" stroke="#10b981" stroke-width="1.5"/>
+  <text x="685" y="268" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">+150 Utilisateurs</text>
+  <rect x="620" y="278" width="130" height="14" rx="6" fill="rgba(16,185,129,0.2)"/>
+  <text x="685" y="288" text-anchor="middle" fill="#34d399" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Next.js 18 SSR</text>
+  <rect x="600" y="310" width="170" height="50" rx="8" fill="#3b0764" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="685" y="333" text-anchor="middle" fill="#d8b4fe" font-size="10" font-weight="700" font-family="Segoe UI, sans-serif">LLM Génération</text>
+  <rect x="620" y="343" width="130" height="14" rx="6" fill="rgba(168,85,247,0.2)"/>
+  <text x="685" y="353" text-anchor="middle" fill="#c084fc" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Mistral 7B / Gemini Pro</text>
+  <rect x="275" y="150" width="250" height="80" rx="10" fill="url(#hub)" filter="url(#glow)"/>
+  <text x="400" y="182" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="Segoe UI, sans-serif">Python 3.11</text>
+  <text x="400" y="200" text-anchor="middle" fill="#fff" font-size="10" opacity="0.9" font-family="Segoe UI, sans-serif">Quiz Engine — Hub Central</text>
+  <text x="400" y="216" text-anchor="middle" fill="#fff" font-size="9" opacity="0.7" font-family="Segoe UI, sans-serif">Traitement &amp; orchestration</text>
+  <rect x="320" y="260" width="160" height="40" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="400" y="280" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700" font-family="Segoe UI, sans-serif">Explications Auto</text>
+  <text x="400" y="293" text-anchor="middle" fill="#93c5fd" font-size="7" opacity="0.8" font-family="Segoe UI, sans-serif">Raisonnement juridique</text>
+  <line x1="200" y1="92" x2="275" y2="175" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="200" y1="187" x2="275" y2="185" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="200" y1="270" x2="275" y2="200" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="200" y1="335" x2="310" y2="280" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="525" y1="180" x2="600" y2="100" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="525" y1="185" x2="600" y2="187" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="525" y1="250" x2="600" y2="340" stroke="#a855f7" stroke-width="1.5"/>
+  <line x1="600" y1="330" x2="525" y2="215" stroke="#a855f7" stroke-width="1" stroke-dasharray="3 2"/>
+  <line x1="400" y1="230" x2="400" y2="395" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="230" y="120" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">documents</text>
+  <text x="230" y="200" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">questions</text>
+  <text x="230" y="288" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">catégories</text>
+  <text x="200" y="316" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">validé</text>
+  <text x="545" y="130" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">évaluation</text>
+  <text x="545" y="180" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">API</text>
+  <text x="545" y="310" fill="#64748b" font-size="6" font-family="Segoe UI, sans-serif">LLM</text>
+  <line x1="700" y1="340" x2="620" y2="420" stroke="#991b1b" stroke-width="1" stroke-dasharray="3 3" opacity="0.3"/>
+  <line x1="525" y1="250" x2="620" y2="420" stroke="#991b1b" stroke-width="1" stroke-dasharray="3 3" opacity="0.3"/>
+  <rect x="230" y="438" width="160" height="16" rx="8" fill="rgba(153,27,27,0.2)" stroke="#991b1b" stroke-width="1"/>
+  <text x="310" y="450" text-anchor="middle" fill="#f87171" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Redis retiré de l'architecture</text>
+  <rect x="430" y="438" width="170" height="16" rx="8" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1"/>
+  <text x="515" y="450" text-anchor="middle" fill="#818cf8" font-size="7" font-weight="600" font-family="Segoe UI, sans-serif">Python · PostgreSQL · LLM · Next.js</text>
+</svg>

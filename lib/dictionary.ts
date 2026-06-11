@@ -52,6 +52,8 @@ export interface Dictionary {
       description: string;
       link: string;
       image: string;
+      link2?: string;
+      link2Label?: string;
     }[];
   };
   footer: {
@@ -149,6 +151,8 @@ const fr: Dictionary = {
           description: "Site web vitrine de l'association et application de quiz interactive. Développement complet incluant la présentation de l'association, ses actions, et un système de quiz pédagogique fullstack.",
           link: "https://github.com/vincent-tran-94/Site_web_application_quiz_v1",
           image: "/images/Site_web_PTD_accueil.PNG",
+          link2: "architecture-preservetondroit",
+          link2Label: "Voir l'architecture",
         },
         {
         title: "AQG4SD - Génération automatisée de requêtes GraphQL à partir des exigences utilisateur en langage naturel pour la découverte et la sélection de services cloud.",
@@ -283,6 +287,8 @@ const en: Dictionary = {
           description: "Association showcase website and interactive quiz application. Full development including the association presentation, its actions, and a fullstack educational quiz system.",
           link: "https://github.com/vincent-tran-94/Site_web_application_quiz_v1",
           image: "/images/Site_web_PTD_accueil.PNG",
+          link2: "architecture-preservetondroit",
+          link2Label: "See architecture",
         },
         {
         title: "AQG4SD - Automated GraphQL Query Generation from Natural Language User Requirements for Cloud Service Discovery and Selection.",
