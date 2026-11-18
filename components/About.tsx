@@ -9,51 +9,28 @@ interface AboutProps {
 
 export default function About({ dict }: AboutProps) {
   return (
-    <section
-      id="about"
-      style={{
-        padding: "120px 20px",
-        maxWidth: "900px",
-        margin: "0 auto",
-        textAlign: "center",
-      }}
-    >
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
+    <section id="about" className="section-shell about-section">
+      <motion.div
+        className="about-panel"
+        initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        style={{
-          fontSize: "2rem",
-          fontWeight: 700,
-          marginBottom: "50px",
-          color: "#f0f4ff",
-          letterSpacing: "1px",
-        }}
+        transition={{ duration: 0.55 }}
+        viewport={{ once: true, margin: "-60px" }}
       >
-        {dict.title}
-      </motion.h2>
-
-      <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-        {[dict.paragraph1, dict.paragraph2, dict.paragraph3].map((p, i) => (
-          <motion.p
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            viewport={{ once: true, margin: "-30px" }}
-            style={{
-              fontSize: "1.05rem",
-              color: "#f0f4ff",
-              lineHeight: "1.8",
-              maxWidth: "750px",
-              margin: "0 auto",
-            }}
-          >
-            {p}
-          </motion.p>
-        ))}
-      </div>
+        <div className="section-heading about-heading">
+          <p className="eyebrow">01 — {dict.kicker}</p>
+          <h2>{dict.title}</h2>
+        </div>
+        <div className="about-copy">
+          {[dict.paragraph1, dict.paragraph2, dict.paragraph3].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+        <div className="about-signature">
+          <span className="signature-mark">VT</span>
+          <span>{dict.signature}</span>
+        </div>
+      </motion.div>
     </section>
   );
 }

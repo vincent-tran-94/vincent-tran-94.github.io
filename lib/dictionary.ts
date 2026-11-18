@@ -10,17 +10,23 @@ export interface Dictionary {
     title: string;
     subtitle: string;
     description: string;
-    contact: string;
+    projectsCta: string;
+    emailCta: string;
+    scrollCta: string;
     phone: string;
     email: string;
   };
   about: {
+    kicker: string;
     title: string;
     paragraph1: string;
     paragraph2: string;
     paragraph3: string;
+    signature: string;
   };
   resume: {
+    kicker: string;
+    intro: string;
     education: {
       title: string;
       items: string[];
@@ -46,18 +52,27 @@ export interface Dictionary {
     };
   };
   projects: {
+    kicker: string;
     title: string;
+    intro: string;
+    filterLabel: string;
+    githubLabel: string;
+    filters: { all: string };
+    categories: { web: string; ai: string; systems: string };
     items: {
       title: string;
       description: string;
       link: string;
       image: string;
+      imageFit?: "contain" | "cover";
+      category: "web" | "ai" | "systems";
       link2?: string;
       link2Label?: string;
     }[];
   };
   footer: {
     copyright: string;
+    contact: string;
   };
 }
 
@@ -71,63 +86,64 @@ const fr: Dictionary = {
   hero: {
     portfolio: "PORTFOLIO",
     title: "Vincent TRAN",
-    subtitle: "Développeur Full Stack / Ingénieur IA",
-    description: "Passionné par l'intelligence artificielle et le développement web, avec une solide expérience en programmation.",
-    contact: "Contact",
+    subtitle: "Ingénieur IA · Développeur Full Stack",
+    description: "Je conçois des produits numériques utiles, de l’architecture technique à l’expérience utilisateur, en reliant intelligence artificielle, data et développement web.",
+    projectsCta: "Voir mes projets",
+    emailCta: "Me contacter",
+    scrollCta: "Explorer le portfolio",
     phone: "+33 7 67 30 43 98",
     email: "vincenttran94@hotmail.fr",
   },
   about: {
-    title: "À Propos",
-    paragraph1: "Je suis Vincent TRAN, passionné par l'intelligence artificielle, le développement web, et la data science. Fort d'au moins trois ans d'expérience professionnelle, j'ai acquis des compétences solides en programmation, analyse de données et systèmes embarqués. J'aime relever des défis et travailler sur des projets concrets qui ont un impact positif.",
-    paragraph2: "J'ai notamment contribué au développement d'une application web pour l'association Préserve ton droit, où j'ai créé des parcours d'apprentissage interactifs pour les utilisateurs. Ce projet a également permis de collecter des données utiles pour accroître la visibilité de l'association. En parallèle, je suis capable de rédiger des documents techniques et fonctionnels pour fournir des informations et des conseils pratiques.",
-    paragraph3: "En plus de mon expérience dans le développement web, j'ai des connaissances en data science et en systèmes embarqués, ce qui me permet d'approcher des projets sous différents angles. Aujourd'hui, je suis motivé à rejoindre une entreprise dynamique et innovante, où je pourrai mettre à profit mes compétences pour contribuer efficacement à des projets significatifs.",
+    kicker: "Profil",
+    title: "Du besoin au produit, avec une vision complète.",
+    paragraph1: "Ingénieur en intelligence artificielle et développeur full stack, je transforme des besoins métier en solutions concrètes, maintenables et faciles à utiliser.",
+    paragraph2: "J’ai piloté les projets numériques de Préserve Ton Droit pour faciliter l’accès au droit, puis exploré chez Devoteam la conception d’architectures cloud assistée par l’IA.",
+    paragraph3: "J’aime faire le lien entre produit, technique et utilisateurs : cadrer une idée, construire la solution et la faire évoluer avec l’équipe.",
+    signature: "Ingénierie · Produit · Impact",
   },
   resume: {
+    kicker: "Parcours",
+    intro: "Une expérience à la croisée du développement produit, de l’intelligence artificielle et de la gestion de projet.",
     education: {
       title: "Formations",
       items: [
         "2024 – 2025 : Diplôme Universitaire en Data Analytics, Université Paris 1 Panthéon-Sorbonne",
-        "Juin 2023 – Septembre 2023 : Développeur bas-niveau Linux, DataScientest",
-        "Février 2023 – Avril 2023 : Développeur Web Python, M2I Formation",
-        "2020 - Juin 2022 : Master en Ingénierie de l'Intelligence Artificielle, Université Paris 8",
-        "2019 - 2020 : Licence Sciences pour l'Ingénieur, UPEC",
-        "2017 - 2019 : DUT Génie Electrique et Informatique Industrielle, IUT de Créteil-Vitry",
+        "2020 – 2022 : Master en Ingénierie de l'Intelligence Artificielle, Université Paris 8",
+        "2017 – 2020 : DUT GEII et Licence Sciences pour l'Ingénieur, IUT de Créteil-Vitry / UPEC",
+        "2023 : Formations professionnelles en développement web Python et Linux embarqué",
       ],
     },
     experience: {
       title: "Expériences",
       items: [
         {
-          title: "Janvier 2024 – Aujourd'hui: Développeur Full Stack & Chef de Projet Digital | Préserve Ton Droit, Paris, France.",
-          description: "En tant que Développeur full stack & Chef de projet digital, je pilote la stratégie numérique de l'association pour faciliter l'accès au droit. Mon action se concentre sur 4 axes :\n\n• Lancement & Stratégie : Conception du site vitrine www.preserve-ton-droit.com et contribution directe à la définition de la stratégie de croissance.\n• Développement Web : Conception et développement d'une application de quiz fullstack, incluant une API REST robuste pour la gestion de parcours d'apprentissage personnalisables, et intégrant la génération automatisée de quiz au format JSON via un LLM.\n• Gestion de Contenu (CMS) : Déploiement et configuration du Headless CMS Strapi pour la création du blog, structurant les données et offrant aux contributeurs une interface autonome pour la publication d'articles juridiques et actions humanitaires avec un API REST.\n• Leadership Technique : Coordination des équipes UX/UI et des développeurs pour assurer l'amélioration continue des plateformes.",
+          title: "Juil. – sept. 2026 · Monteur-câbleur | Audiovisuel Technique Assistance — TF1, Boulogne-Billancourt",
+          description: "Mission chez TF1, de la validation des besoins à la mise en service : montage, câblage réseau des équipements audiovisuels et livraison des installations.",
         },
         {
-          title: "Avril 2025 – Octobre 2025 : Ingénieur en Intelligence Artificielle | Devoteam, Levallois-Perret, France",
-          description: "Le sujet porte sur l'axe de recherche du Cloud Autonome dans le but de développer de solutions innovantes pour assister les architectes cloud dans la définition des architectures techniques pour le déploiement d'applications cloud natives, basées sur des besoins fonctionnels.\n\nPrincipales missions & réalisations :\n\n• Étude des techniques existantes pour la traduction du langage naturel en architecture technique formalisée à l'aide des standards de l'industrie.\n• Implémentation d'un PoC (Proof of Concept) à l'état de l'art de la traduction du langage naturel.\n• Rédaction des livrables de l'entreprise.\n• Proposition des solutions à l'état de l'art des bonnes pratiques et de la sécurité du domaine.",
+          title: "Janv. 2024 – juin 2026 · Développeur full stack & chef de projet digital | Préserve Ton Droit — Distanciel",
+          description: "Pilotage stratégique et développement du projet numérique d’accès au droit : site vitrine, application de quiz full stack (API REST, génération par IA) et CMS Strapi. Coordination UX/UI et développement.",
         },
         {
-          title: "Février 2022 – Juillet 2022 : Data Scientist NLP | Laboratoire d'Institut des Humanités Numériques (IDHN), Cergy, France.",
-          description: "Développement de 'Politiquiz' : un modèle de classification et une application web interactive analysant en temps réel les discours des candidats à l'élection présidentielle de 2022.\n\nPrincipales missions & réalisations :\n\n• Acquisition et traitement NLP : Collecte des publications sur les réseaux sociaux et préparation du corpus textuel à l'aide de techniques avancées de nettoyage (Regex, NLTK, SpaCy).\n• Modélisation & Machine Learning : Développement, comparaison et optimisation de modèles de classification supervisée (Multinomial Naive Bayes, Régression Logistique, Random Forest, Linear SVC).\n• Évaluation de la performance : Suivi rigoureux des modèles via les métriques clés (Accuracy, Précision, Rappel et F1-score).\n• Dataviz & Déploiement : Intégration des prédictions dans un tableau de bord dynamique pour permettre aux utilisateurs d'analyser les discours sous plusieurs angles.",
+          title: "Avr. – oct. 2025 · AI Engineer | Devoteam — Levallois-Perret",
+          description: "PoC d’architecture cloud sécurisée : agent IA connecté par MCP et GraphQL à une API de pricing, benchmark de LLM, analyse de métadonnées par embeddings et évaluation automatisée des coûts avec LangGraph.",
         },
         {
-          title: "Avril 2019 – Juillet 2019 : Technicien en conception électronique | Dassault Aviation - Saint-Cloud, France.",
-          description: "Conception d'un outil de communication entre un ordinateur et un système de test pour le diagnostic et l'échange de données.",
+          title: "Fév. – juil. 2022 · Data Scientist | Institut des Humanités Numériques — Cergy",
+          description: "Modèle NLP pour classer les thèmes des discours de la présidentielle 2022 dans une application web : scraping de presse, analyse de données sociales, nettoyage du corpus et évaluation des modèles.",
         },
       ],
     },
     skills: {
       title: "Compétences Techniques",
       items: [
-        "Langages: Python, Java, HTML/CSS, JavaScript",
-        "Data Science: Pandas, Scikit-learn, Keras, NLTK, SpaCy, Tensorflow",
-        "IA & NLP: Transformers, LangChain, LangGraph, OpenAI, Llama, Claude",
-        "Bases de données: PostgreSQL, Neo4J",
-        "MLOps & CI/CD: Git, Gitlab, Docker, MLflow",
-        "Cloud: Databricks, Azure, AWS",
-        "Data Viz & Web: PowerBI, FastAPI, NextJS, Flask, Streamlit",
-        "Systèmes: Windows, Debian, Ubuntu",
-        "Gestion de projet: Méthode Agile",
+        "Langages : Python, JavaScript, Java",
+        "Web & API : Next.js, FastAPI, Flask, Streamlit",
+        "IA & data : NLP, RAG, Transformers, scikit-learn, Pandas",
+        "Cloud & MLOps : AWS, Azure, Docker, MLflow",
+        "Données : PostgreSQL, Neo4j, Power BI",
+        "Systèmes : Linux, Raspberry Pi, systèmes embarqués",
       ],
     },
     softSkills: {
@@ -144,56 +160,83 @@ const fr: Dictionary = {
     },
   },
   projects: {
-    title: "Découvrir mes meilleurs projets",
+    kicker: "Sélection",
+    title: "Des projets pensés pour être utiles.",
+    intro: "Quelques réalisations qui illustrent mon approche : comprendre le besoin, choisir les bons outils et livrer une expérience claire.",
+    filterLabel: "Filtrer les projets par domaine",
+    githubLabel: "Voir le projet",
+    filters: { all: "Tout voir" },
+    categories: { web: "Web & produit", ai: "IA & data", systems: "Systèmes" },
     items: [
         {
           title: "Site web vitrine & Application Quiz - Préserve Ton Droit",
           description: "Site web vitrine de l'association et application de quiz interactive. Développement complet incluant la présentation de l'association, ses actions, et un système de quiz pédagogique fullstack.",
           link: "https://github.com/vincent-tran-94/Site_web_application_quiz_v1",
           image: "/images/Site_web_PTD_accueil.PNG",
+          imageFit: "contain",
+          category: "web",
           link2: "architecture-preservetondroit",
           link2Label: "Voir l'architecture",
         },
         {
-        title: "AQG4SD - Génération automatisée de requêtes GraphQL à partir des exigences utilisateur en langage naturel pour la découverte et la sélection de services cloud.",
-        description: "Application Streamlit pour Génération automatisée de requêtes GraphQL à partir des exigences utilisateur en langage naturel pour la découverte et la sélection de services cloud.",
+          title: "Steam Activity MCP",
+          description: "Serveur MCP et tableau de bord pour explorer une bibliothèque Steam, le temps de jeu et l’activité récente.",
+          link: "https://github.com/vincent-tran-94/Steam-Activity-MCP",
+          image: "/images/steam-activity-dashboard.png",
+          imageFit: "contain",
+          category: "systems",
+        },
+        {
+        title: "AQG4SD — Génération de requêtes GraphQL",
+        description: "Un prototype Streamlit qui convertit des besoins en langage naturel en requêtes GraphQL pour découvrir des services cloud.",
         link: "https://github.com/vincent-tran-94/AQG4SD",
         image: "/images/Interface_part_1_Streamlit.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Recherche d'informations de Quiz avec l'architecture RAG ( Retrieval Augmented Generation )",
-        description: "L'objectif est de permettre à l'utilisateur de spécifier des informations précises pour générer un contexte de quiz adapté.",
+        title: "Génération de quiz avec RAG",
+        description: "Une approche RAG pour transformer des informations ciblées en contexte de quiz pertinent.",
         link: "https://github.com/vincent-tran-94/LLM-Quiz-Contextual-RAG",
         image: "/images/interface_quiz.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Analyse sentimentale des tweets sur les jeux vidéos",
-        description: "L'objectif principal de ce projet est de déterminer si un type de jeu est perçu comme bon, mauvais ou neutre à partir d'un ensemble de tweets, en utilisant des modèles de Machine Learning",
+        title: "Sentiment autour des jeux vidéo",
+        description: "Analyse de tweets et classification des opinions sur différents jeux vidéo avec des modèles de machine learning.",
         link: "https://github.com/vincent-tran-94/Sentiment_Analytics_Video_Games",
         image: "/images/Vocabulary_sentimental_by_game.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Classification multi-classes des tweets des candidats à l'élection présidentielle de 2022",
-        description: "Développement et évaluation des modèles de classification de texte supervisée pour identifier des sujets politiques dans les discours des candidats à l'élection présidentielle de 2022. Intégration des résultats dans une application web interactive",
+        title: "Analyse des discours politiques",
+        description: "Modèles NLP pour classer les thèmes de discours de la présidentielle 2022, présentés dans une application interactive.",
         link: "https://github.com/vincent-tran-94/Stage_Cergy",
         image: "/images/nlp_project_2.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Projet final Raspberry Pi pour la formation 'DataScientest'",
-        description: "Système d'application dédié à la surveillance et à la gestion d'une carte Raspberry Pi.",
+        title: "Supervision système sur Raspberry Pi",
+        description: "Outil Linux embarqué pour surveiller et administrer une carte Raspberry Pi.",
         link: "https://github.com/vincent-tran-94/Kernel_RPI",
         image: "/images/raspberrypi_project_2.jpg",
+        category: "systems",
       },
       {
-        title: "Robot Car autonome M1/M2",
-        description: "Pilotage d'un robot sans interaction humaine via capteur ultrason et caméra pour la reconnaissance d'objet.",
+        title: "Robot mobile autonome",
+        description: "Robot piloté par capteurs ultrason et caméra, avec détection d’objets et navigation autonome.",
         link: "https://github.com/vincent-tran-94/Electronic_Robot_Car_RPI",
         image: "/images/robot_car.jpg",
+        category: "systems",
       }
     ],
   },
   footer: {
-    copyright: "© 2026 Vincent TRAN. Tous droits réservés.",
+    copyright: "© 2026 Vincent Tran. Tous droits réservés.",
+    contact: "Un projet en tête ? Échangeons.",
   },
 };
 
@@ -207,63 +250,64 @@ const en: Dictionary = {
   hero: {
     portfolio: "PORTFOLIO",
     title: "Vincent TRAN",
-    subtitle: "Data Scientist / Web Developer",
-    description: "Passionate about artificial intelligence and web development, with solid programming experience.",
-    contact: "Contact",
+    subtitle: "AI Engineer · Full Stack Developer",
+    description: "I build useful digital products, from technical architecture to user experience, connecting artificial intelligence, data, and web development.",
+    projectsCta: "Explore my work",
+    emailCta: "Get in touch",
+    scrollCta: "Explore the portfolio",
     phone: "+33 7 67 30 43 98",
     email: "vincenttran94@hotmail.fr",
   },
   about: {
-    title: "About Me",
-    paragraph1: "I am Vincent TRAN, passionate about artificial intelligence, webdevelopment, and data science. With at least three years of professional experience, I have acquired strong skills in programming, data analysis, and embedded systems.",
-    paragraph2: "I contributed to the development of a web application for the association Preserve Ton Droit, where I created interactive learning paths for users. This project also allowed us to collect valuable data to increase the association's visibility",
-    paragraph3: "In addition, I am able to write technical and functional documentation to provide information and practical advice.",
+    kicker: "Profile",
+    title: "From an idea to a product, with a complete perspective.",
+    paragraph1: "As an AI engineer and full stack developer, I turn business needs into practical, maintainable solutions that are easy to use.",
+    paragraph2: "I led Préserve Ton Droit’s digital projects to improve access to legal support, then explored AI-assisted cloud architecture design at Devoteam.",
+    paragraph3: "I enjoy connecting product, technology, and people: shaping an idea, building the solution, and improving it with the team.",
+    signature: "Engineering · Product · Impact",
   },
   resume: {
+    kicker: "Experience",
+    intro: "A career at the intersection of product development, artificial intelligence, and project leadership.",
     education: {
       title: "Education",
       items: [
         "2024 – 2025: University Diploma in Data Analytics, Paris 1 Panthéon-Sorbonne",
-        "June 2023 – September 2023: Low-level Linux Developer, DataScientest",
-        "February 2023 – April 2023: Python Web Developer, M2I Formation",
-        "2020 - June 2022: Master's in AI Engineering, Paris 8 University",
-        "2019 - 2020: Bachelor's in Engineering Sciences, UPEC",
-        "2017 - 2019: DUT in Electrical Engineering, IUT de Créteil-Vitry",
+        "2020 – 2022: Master’s in AI Engineering, Paris 8 University",
+        "2017 – 2020: DUT in Electrical Engineering and Bachelor’s in Engineering Sciences, IUT de Créteil-Vitry / UPEC",
+        "2023: Professional training in Python web development and embedded Linux",
       ],
     },
     experience: {
       title: "Experience",
       items: [
         {
-          title: "January 2024 – Present : Full Stack Developer & Digital Project Manager | Préserve Ton Droit, Paris, France.",
-          description: "As a Full Stack Developer & Digital Project Manager, I drive the association's digital strategy to facilitate access to legal rights. My work focuses on 4 areas:\n\n• Launch & Strategy: Design of the showcase website www.preserve-ton-droit.com and direct contribution to the growth strategy.\n• Web Development: Design and development of a fullstack quiz application, including a robust REST API for managing customizable learning paths, integrating automated quiz generation in JSON format via an LLM.\n• CMS Management: Deployment and configuration of the Strapi Headless CMS for the blog, structuring data and providing contributors with an autonomous interface for publishing legal articles and humanitarian actions via a REST API.\n• Technical Leadership: Coordination of UX/UI teams and developers to ensure continuous platform improvement.",
+          title: "Jul – Sep 2026 · Cable Technician | Audiovisuel Technique Assistance — TF1, Boulogne-Billancourt",
+          description: "TF1 assignment from requirements gathering to commissioning: network cabling for audiovisual equipment, client validation, and delivery of completed installations.",
         },
         {
-          title: "April 2025 – October 2025: AI Engineer | Devoteam, Levallois-Perret, France",
-          description: "This project focuses on the research area of ​​Autonomous Cloud, aiming to develop innovative solutions to assist cloud architects in defining technical architectures for deploying cloud-native applications based on functional requirements. Main missions & achievements: • Study of existing techniques for translating natural language into formalized technical architecture using industry standards. • Implementation of a state-of-the-art Proof of Concept (PoC) for natural language translation. • Drafting of company deliverables. • Proposal of state-of-the-art solutions incorporating best practices and domain security."
+          title: "Jan 2024 – Jun 2026 · Full Stack Developer & Digital Project Manager | Préserve Ton Droit — Remote",
+          description: "Led the digital project to improve access to legal support: showcase website, quiz app with a REST API and AI-generated quizzes, and Strapi CMS. Coordinated UX/UI and engineering contributors.",
         },
         {
-          title: "February 2022 – July 2022: Data Scientist | Digital Humanities Institute (IDHN), Cergy, France.",
-          description: "Development of 'Politiquiz': a classification model and interactive web application analyzing in real-time the speeches of candidates for the 2022 presidential election.\n\nKey missions & achievements:\n\n• NLP Acquisition & Processing: Collection of social media publications and preparation of the textual corpus using advanced cleaning techniques (Regex, NLTK, SpaCy).\n• Modeling & Machine Learning: Development, comparison, and optimization of supervised classification models (Multinomial Naive Bayes, Logistic Regression, Random Forest, Linear SVC).\n• Performance Evaluation: Rigorous model monitoring through key metrics (Accuracy, Precision, Recall, and F1-score).\n• Dataviz & Deployment: Integration of predictions into a dynamic dashboard allowing users to analyze speeches from multiple angles.",
+          title: "Apr – Oct 2025 · AI Engineer | Devoteam — Levallois-Perret",
+          description: "Prototyped secure cloud architecture support: an AI agent connected through MCP and GraphQL to a cloud pricing API, LLM benchmarking, semantic metadata embeddings, and automated cost evaluation with LangGraph.",
         },
         {
-          title: "April 2019 – July 2019: Electronic Design Technician | Dassault Aviation - Saint-Cloud, France.",
-          description: "Design of a communication tool between a computer and a test system for data diagnosis and exchange.",
+          title: "Feb – Jul 2022 · Data Scientist | Digital Humanities Institute — Cergy",
+          description: "Built an NLP model to classify themes in 2022 presidential speeches for a web app: press scraping, social data analysis, corpus cleaning, and model evaluation.",
         },
       ],
     },
     skills: {
       title: "Technical Skills",
       items: [
-        "Languages: Python, Java, HTML/CSS, JavaScript",
-        "Data Science: Pandas, Scikit-learn, Keras, NLTK, SpaCy, Tensorflow",
-        "AI & NLP: Transformers, LangChain, LangGraph, OpenAI, Llama, Claude",
-        "Databases: PostgreSQL, Neo4J",
-        "MLOps & CI/CD: Git, Gitlab, Docker, MLflow",
-        "Cloud: Databricks, Azure, AWS",
-        "Data Viz & Web: PowerBI, FastAPI, NextJS, Flask, Streamlit",
-        "Systems: Windows, Debian, Ubuntu",
-        "Project Management: Agile",
+        "Languages: Python, JavaScript, Java",
+        "Web & APIs: Next.js, FastAPI, Flask, Streamlit",
+        "AI & data: NLP, RAG, Transformers, scikit-learn, Pandas",
+        "Cloud & MLOps: AWS, Azure, Docker, MLflow",
+        "Data: PostgreSQL, Neo4j, Power BI",
+        "Systems: Linux, Raspberry Pi, embedded systems",
       ],
     },
     softSkills: {
@@ -280,56 +324,83 @@ const en: Dictionary = {
     },
   },
   projects: {
-    title: "Discover my best projects",
+    kicker: "Selected work",
+    title: "Projects built to be useful.",
+    intro: "A selection that reflects how I work: understand the need, choose the right tools, and deliver a clear experience.",
+    filterLabel: "Filter projects by area",
+    githubLabel: "View project",
+    filters: { all: "All work" },
+    categories: { web: "Web & product", ai: "AI & data", systems: "Systems" },
     items: [
         {
           title: "Showcase Website & Quiz Application - Préserve Ton Droit",
           description: "Association showcase website and interactive quiz application. Full development including the association presentation, its actions, and a fullstack educational quiz system.",
           link: "https://github.com/vincent-tran-94/Site_web_application_quiz_v1",
           image: "/images/Site_web_PTD_accueil.PNG",
+          imageFit: "contain",
+          category: "web",
           link2: "architecture-preservetondroit",
           link2Label: "See architecture",
         },
         {
-        title: "AQG4SD - Automated GraphQL Query Generation from Natural Language User Requirements for Cloud Service Discovery and Selection.",
-        description: "Streamlit application for automated generation of GraphQL queries from natural language user requirements for cloud service discovery and selection.",
+          title: "Steam Activity MCP",
+          description: "An MCP server and dashboard for exploring a Steam library, playtime, and recent activity.",
+          link: "https://github.com/vincent-tran-94/Steam-Activity-MCP",
+          image: "/images/steam-activity-dashboard.png",
+          imageFit: "contain",
+          category: "systems",
+        },
+        {
+        title: "AQG4SD — Natural language to GraphQL",
+        description: "A Streamlit prototype that turns natural-language requirements into GraphQL queries for cloud service discovery.",
         link: "https://github.com/vincent-tran-94/AQG4SD",
         image: "/images/Interface_part_1_Streamlit.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Searching for quiz information using RAG (Retrieval Augmented Generation) architecture",
-        description: "The objective is to allow users to specify precise information to generate an appropriate quiz context.",
+        title: "RAG-powered quiz generation",
+        description: "A retrieval-augmented approach for turning focused source material into useful quiz context.",
         link: "https://github.com/vincent-tran-94/LLM-Quiz-Contextual-RAG",
         image: "/images/interface_quiz.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Sentimental analysis of tweets about video games",
-        description: "The main objective of this project is to determine whether a type of game is perceived as good, bad or neutral based on a set of tweets, using Machine Learning models",
+        title: "Video game sentiment analysis",
+        description: "Classifies opinions about video games from tweets using machine learning models.",
         link: "https://github.com/vincent-tran-94/Sentiment_Analytics_Video_Games",
         image: "/images/Vocabulary_sentimental_by_game.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Multi-class classification of tweets from candidates in the 2022 presidential election",
-        description: "Development and evaluation of supervised text classification models to identify political themes in the speeches of candidates for the 2022 presidential election. Integration of the results into an interactive web application",
+        title: "Political speech analysis",
+        description: "NLP models classify themes in 2022 presidential speeches, with results presented in an interactive application.",
         link: "https://github.com/vincent-tran-94/Stage_Cergy",
         image: "/images/nlp_project_2.png",
+        imageFit: "contain",
+        category: "ai",
       },
       {
-        title: "Raspberry Pi Final Project - DataScientest",
-        description: "Application system dedicated to monitoring and managing a Raspberry Pi board.",
+        title: "Raspberry Pi system monitor",
+        description: "An embedded Linux tool for monitoring and managing a Raspberry Pi.",
         link: "https://github.com/vincent-tran-94/Kernel_RPI",
         image: "/images/raspberrypi_project_2.jpg",
+        category: "systems",
       },
       {
-        title: "Autonomous Robot Car M1/M2",
-        description: "Robot control without human interaction using ultrasonic sensor and camera for object recognition.",
+        title: "Autonomous mobile robot",
+        description: "A mobile robot combining ultrasonic sensors and camera-based object recognition.",
         link: "https://github.com/vincent-tran-94/Electronic_Robot_Car_RPI",
         image: "/images/robot_car.jpg",
+        category: "systems",
       },
     ],
   },
   footer: {
-    copyright: "© 2026 Vincent TRAN. All rights reserved.",
+    copyright: "© 2026 Vincent Tran. All rights reserved.",
+    contact: "Have a project in mind? Let’s talk.",
   },
 };
 
