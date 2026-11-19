@@ -185,6 +185,8 @@ const fr: Dictionary = {
           image: "/images/steam-activity-dashboard.png",
           imageFit: "contain",
           category: "systems",
+          link2: "https://medium.com/%40vincenttran_81420/understanding-steam-playtime-through-natural-language-an-mcp-based-text-to-graphql-mvp-3aad2b882037",
+          link2Label: "Voir l’article",
         },
         {
         title: "AQG4SD — Génération de requêtes GraphQL",
@@ -349,6 +351,8 @@ const en: Dictionary = {
           image: "/images/steam-activity-dashboard.png",
           imageFit: "contain",
           category: "systems",
+          link2: "https://medium.com/%40vincenttran_81420/understanding-steam-playtime-through-natural-language-an-mcp-based-text-to-graphql-mvp-3aad2b882037",
+          link2Label: "Read the article",
         },
         {
         title: "AQG4SD — Natural language to GraphQL",

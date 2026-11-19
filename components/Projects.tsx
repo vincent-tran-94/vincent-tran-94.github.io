@@ -86,9 +86,20 @@ export default function Projects({ dict }: ProjectsProps) {
                     {dict.githubLabel}<span aria-hidden="true">↗</span>
                   </a>
                   {project.link2 && project.link2Label && (
-                    <Link className="text-link text-link-muted" href={`/${locale}/${project.link2}`}>
-                      {project.link2Label}<span aria-hidden="true">↗</span>
-                    </Link>
+                    project.link2.startsWith("https://") ? (
+                      <a
+                        className="text-link text-link-muted"
+                        href={project.link2}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.link2Label}<span aria-hidden="true">↗</span>
+                      </a>
+                    ) : (
+                      <Link className="text-link text-link-muted" href={`/${locale}/${project.link2}`}>
+                        {project.link2Label}<span aria-hidden="true">↗</span>
+                      </Link>
+                    )
                   )}
                 </div>
               </div>
