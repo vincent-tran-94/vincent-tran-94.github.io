@@ -195,6 +195,8 @@ const fr: Dictionary = {
         image: "/images/Interface_part_1_Streamlit.png",
         imageFit: "contain",
         category: "ai",
+        link2: "https://ceur-ws.org/Vol-4203/paper06.pdf",
+        link2Label: "Voir l’article",
       },
       {
         title: "Génération de quiz avec RAG",
@@ -361,6 +363,8 @@ const en: Dictionary = {
         image: "/images/Interface_part_1_Streamlit.png",
         imageFit: "contain",
         category: "ai",
+        link2: "https://ceur-ws.org/Vol-4203/paper06.pdf",
+        link2Label: "Read the paper",
       },
       {
         title: "RAG-powered quiz generation",
